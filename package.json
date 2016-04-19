@@ -1,0 +1,29 @@
+{
+  "name": "portal-naf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fogbow/portal-naf"
+  },
+  "keywords": [
+    "naf",
+    "fogbow"
+  ],
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/fogbow/portal-naf/issues"
+  },
+  "homepage": "https://github.com/fogbow/portal-naf#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.2.0"
+  }
+}
