@@ -2,66 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Portal da Nuvem Acadêmica Federada</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nuvem Acadêmica Federada</title>
   <link rel="stylesheet" href="/dist/assets/css/app.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="/dist/assets/css/style.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
 
   <div class="container">
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Brand</a>
-        </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-4 col-sm-1 col-sm-offset-0">
+        <svg id="logo-naf-sm" data-name="NAF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.35 29.57">
+          <title>NAF</title>
+          <path class="cls-1" d="M4.54,12.55V18a0.06,0.06,0,0,1-.1,0L1.18,14.73a0.06,0.06,0,0,0-.1,0v2.95a0.06,0.06,0,0,1-.06.06h-1A0.06,0.06,0,0,1,0,17.72V12.11a0.06,0.06,0,0,1,.1,0l3.25,3.36a0.06,0.06,0,0,0,.1,0V12.55a0.06,0.06,0,0,1,.06-0.06h1A0.06,0.06,0,0,1,4.54,12.55Z"/><path class="cls-1" d="M7.54,11.9a0.06,0.06,0,0,0-.11,0L4.89,17.61l0,0.08a0.06,0.06,0,0,0,.05.08H6a0.06,0.06,0,0,0,.05,0l0.68-1.51a0.06,0.06,0,0,1,.05,0h1.5a0.06,0.06,0,0,1,.05,0L9,17.74a0.06,0.06,0,0,0,.05,0h1a0.06,0.06,0,0,0,.05-0.08Zm0.18,3.25H7.25a0.06,0.06,0,0,1-.05-0.08l0.23-.52a0.06,0.06,0,0,1,.11,0l0.23,0.52A0.06,0.06,0,0,1,7.72,15.15Z"/><path class="cls-1" d="M11.85,13.61v1.3a0.06,0.06,0,0,0,.06.06h1.91a0.06,0.06,0,0,1,.06.06V16a0.06,0.06,0,0,1-.06.06H11.91a0.06,0.06,0,0,0-.06.06v1.64a0.06,0.06,0,0,1-.06.06h-1a0.06,0.06,0,0,1-.06-0.06V12.56a0.06,0.06,0,0,1,.06-0.06h3.45a0.06,0.06,0,0,1,.06.06v0.93a0.06,0.06,0,0,1-.06.06H11.91A0.06,0.06,0,0,0,11.85,13.61Z"/><path class="cls-2" d="M22.35,14.79v0.06a8.88,8.88,0,0,1-5.65,8.21l-0.64.22q-0.1.33-.22,0.64a8.88,8.88,0,0,1-8.21,5.65H7.56a1.23,1.23,0,0,1,0-2.46A6.4,6.4,0,0,0,14,21.18,6.41,6.41,0,0,0,14,8.4,6.4,6.4,0,0,0,7.56,2.46,1.23,1.23,0,0,1,7.56,0H7.63a8.88,8.88,0,0,1,8.21,5.65Q16,6,16.05,6.29L16.7,6.52a8.88,8.88,0,0,1,5.65,8.21v0.06Z"/>
+        </svg>
+      </div>
+      <div class="col-xs-12 col-sm-11">
+        <ul class="nav nav-pills nav-justified nav-main">
+          <li role="presentation"><a href="#">Serviço</a></li>
+          <li role="presentation"><a href="#">Regras de pagamento</a></li>
+          <li role="presentation"><a href="#">Termos</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row intro">
+      <div class="col-sm-6 col-md-5 col-md-offset-1">
+          <h2>A <span class="text-primary">NAF</span> é um serviço que federa provedores de computação na nuvem no modelo infraestrutura como serviço (IaaS).</h2>
+          <div class="call-to-action">
+            <a href="http://naf.fogbowcloud.org/" class="btn btn-primary btn-lg" target="_blank">Autenticar</a>
+          </div>
+      </div>
+      <div class="col-sm-6 col-md-2 col-md-offset-2">
+        <div class="logo">
+          <svg id="logo-naf" data-name="Logo NAF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.77 147.07">
+            <title>NAF</title>
+            <path class="cls-1" d="M18.44,51V73.29a0.24,0.24,0,0,1-.42.17L4.8,59.83a0.24,0.24,0,0,0-.42.17V72a0.24,0.24,0,0,1-.24.24H0.24A0.24,0.24,0,0,1,0,72V49.2A0.24,0.24,0,0,1,.42,49l13.2,13.63A0.24,0.24,0,0,0,14,62.5V51a0.24,0.24,0,0,1,.24-0.24H18.2A0.24,0.24,0,0,1,18.44,51Z"/><path class="cls-1" d="M30.64,48.34a0.24,0.24,0,0,0-.44,0L19.88,71.53l-0.15.34a0.24,0.24,0,0,0,.22.34h4.23a0.24,0.24,0,0,0,.22-0.14l2.75-6.12a0.24,0.24,0,0,1,.22-0.14h6.09a0.24,0.24,0,0,1,.22.14l2.75,6.12a0.24,0.24,0,0,0,.22.14H40.9a0.24,0.24,0,0,0,.22-0.34Zm0.71,13.19H29.47a0.24,0.24,0,0,1-.22-0.34l1-2.13a0.24,0.24,0,0,1,.44,0l0.94,2.13A0.24,0.24,0,0,1,31.36,61.53Z"/><path class="cls-1" d="M48.14,55.29v5.27a0.24,0.24,0,0,0,.24.24h7.74a0.24,0.24,0,0,1,.24.24v3.79a0.24,0.24,0,0,1-.24.24H48.38a0.24,0.24,0,0,0-.24.24V72a0.24,0.24,0,0,1-.24.24H44A0.24,0.24,0,0,1,43.75,72V51A0.24,0.24,0,0,1,44,50.77H58a0.24,0.24,0,0,1,.24.24V54.8A0.24,0.24,0,0,1,58,55H48.38A0.24,0.24,0,0,0,48.14,55.29Z"/><path class="cls-1" d="M1.43,138H0.53V132.2L4.25,136v-3.47H5.17v5.69l-3.73-3.84V138Z"/><path class="cls-1" d="M8,138a2.76,2.76,0,0,1-.69-0.08,2,2,0,0,1-.51-0.2,1.55,1.55,0,0,1-.37-0.29,1.69,1.69,0,0,1-.25-0.34,2.19,2.19,0,0,1-.21-0.56,3,3,0,0,1,0-.58v-3.38H6.79V136s0,0,0,.09a1.13,1.13,0,0,0,0,.22,1.8,1.8,0,0,0,.11.28,1,1,0,0,0,.2.28,1.13,1.13,0,0,0,.34.22,1.27,1.27,0,0,0,.5.09A1,1,0,0,0,8.62,137,1.07,1.07,0,0,0,9,136.57a1.12,1.12,0,0,0,.13-0.39l0-.19v-3.4H10V136s0,0.13,0,.25a2.2,2.2,0,0,1-.07.4,2.48,2.48,0,0,1-.18.47,1.55,1.55,0,0,1-.35.45,1.86,1.86,0,0,1-.58.33A2.47,2.47,0,0,1,8,138Z"/><path class="cls-1" d="M10.35,132.89l0.83-.33,1.61,3.38,1.62-3.38,0.84,0.33-2.45,5.25Z"/><path class="cls-1" d="M15.92,132.58h3.59v0.88H16.83v1.78H19v0.88H16.83v1h2.68V138H15.92v-5.43Z"/><path class="cls-1" d="M24.86,134.77l-1.59,2.17-1.66-2.27L21.36,138H20.45l0.45-5.74,2.38,3.15,2.31-3.15L26,138H25.11Z"/><path class="cls-1" d="M32.77,136.31H30.91L30.15,138h-1l2.68-6,2.68,6h-1Zm-1.48-.88h1.09l-0.54-1.23Z"/><path class="cls-1" d="M37.8,138.1a2.89,2.89,0,0,1-1.13-.22,3,3,0,0,1-.93-0.6,2.84,2.84,0,0,1-.63-0.89,2.76,2.76,0,0,1,0-2.2,2.84,2.84,0,0,1,.63-0.89,3,3,0,0,1,.93-0.6,2.89,2.89,0,0,1,1.13-.22,2.92,2.92,0,0,1,1.07.2,3.17,3.17,0,0,1,.94.58l-0.63.62a2.13,2.13,0,0,0-1.38-.52,2,2,0,0,0-.78.15,2,2,0,0,0-1.07,1,1.87,1.87,0,0,0-.16.76A1.89,1.89,0,0,0,36,136a2,2,0,0,0,.43.62,2,2,0,0,0,.64.42,2,2,0,0,0,.78.15,2.13,2.13,0,0,0,1.38-.52l0.63,0.62a3.13,3.13,0,0,1-.94.58A2.92,2.92,0,0,1,37.8,138.1Z"/><path class="cls-1" d="M43.69,136.31H41.82L41.06,138h-1l2.68-6,2.68,6h-1Zm-1.48-.88H43.3l-0.54-1.23Z"/><path class="cls-1" d="M46.11,138v-5.43h1.22a3.08,3.08,0,0,1,1.13.21,3,3,0,0,1,.93.57,2.66,2.66,0,0,1,.63.86,2.66,2.66,0,0,1,0,2.16,2.67,2.67,0,0,1-.63.86,2.9,2.9,0,0,1-.93.57,3.12,3.12,0,0,1-1.13.2H46.11ZM47,133.42v3.75h0.3a2.22,2.22,0,0,0,.78-0.14,2,2,0,0,0,.64-0.39,1.77,1.77,0,0,0,.59-1.35,1.78,1.78,0,0,0-.59-1.36,2,2,0,0,0-.64-0.39,2.22,2.22,0,0,0-.78-0.14H47Z"/><path class="cls-1" d="M51,132.58H54.6v0.88H51.92v1.78h2.18v0.88H51.92v1H54.6V138H51v-5.43Zm1.72-1-0.53.66H51.59L52.21,131h1l0.62,1.29h-0.6Z"/><path class="cls-1" d="M59.93,134.77l-1.59,2.17-1.66-2.27L56.42,138H55.52L56,132.27l2.38,3.15,2.31-3.15L61.09,138H60.18Z"/><path class="cls-1" d="M62.13,132.58H63V138H62.13v-5.43Z"/><path class="cls-1" d="M66.71,138.1a2.91,2.91,0,0,1-1.14-.22,3,3,0,0,1-.92-0.6,2.78,2.78,0,0,1-.63-0.89,2.72,2.72,0,0,1,0-2.2,2.78,2.78,0,0,1,.63-0.89,3,3,0,0,1,.92-0.6,3,3,0,0,1,2.2,0,3.14,3.14,0,0,1,.94.58l-0.63.62a2.12,2.12,0,0,0-1.37-.52,2,2,0,0,0-.78.15,2.08,2.08,0,0,0-.64.42,2,2,0,0,0-.43.62,1.81,1.81,0,0,0-.16.76,1.83,1.83,0,0,0,.16.76,2,2,0,0,0,1.85,1.19,2.12,2.12,0,0,0,1.37-.52l0.63,0.62a3.1,3.1,0,0,1-.94.58A2.9,2.9,0,0,1,66.71,138.1Z"/><path class="cls-1" d="M72.6,136.31H70.73L70,138H69l2.68-6,2.68,6h-1Zm-1.48-.88h1.09l-0.54-1.23Z"/><path class="cls-1" d="M1.43,144.3H3.62v0.88H1.43v1.9H0.53v-5.43H4.11v0.88H1.43v1.78Z"/><path class="cls-1" d="M4.82,141.64H8.4v0.88H5.72v1.78H7.91v0.88H5.72v1H8.4v0.88H4.82v-5.43Z"/><path class="cls-1" d="M9.36,147.07v-5.43h1.22a3.08,3.08,0,0,1,1.13.21,3,3,0,0,1,.93.57,2.66,2.66,0,0,1,.63.86,2.66,2.66,0,0,1,0,2.16,2.67,2.67,0,0,1-.63.86,2.92,2.92,0,0,1-.93.57,3.12,3.12,0,0,1-1.13.2H9.36Zm0.91-4.59v3.75h0.3a2.2,2.2,0,0,0,.78-0.14,1.94,1.94,0,0,0,.64-0.38,1.84,1.84,0,0,0,.44-0.59,1.82,1.82,0,0,0,.16-0.76A1.78,1.78,0,0,0,12,143a2,2,0,0,0-.64-0.39,2.22,2.22,0,0,0-.78-0.14h-0.3Z"/><path class="cls-1" d="M14.24,141.64h3.59v0.88H15.14v1.78h2.18v0.88H15.14v1h2.68v0.88H14.24v-5.43Z"/><path class="cls-1" d="M19.95,144.81l0.47-.22,0.36-.16,0.22-.1A1,1,0,0,0,21.4,144a0.94,0.94,0,0,0,.15-0.52,0.91,0.91,0,0,0-.08-0.38,1,1,0,0,0-.21-0.31,1.07,1.07,0,0,0-.32-0.21,1,1,0,0,0-.4-0.08H19.68v4.6H18.78v-5.44h1.76a1.88,1.88,0,0,1,.73.14,1.94,1.94,0,0,1,.6.39,1.83,1.83,0,0,1,.4.58,1.7,1.7,0,0,1,.15.7,1.72,1.72,0,0,1-.27.94,2,2,0,0,1-.77.69l1.4,1.64-0.64.63Z"/><path class="cls-1" d="M26.34,145.37H24.47l-0.76,1.7h-1l2.68-6,2.68,6h-1Zm-1.48-.88h1.09l-0.54-1.23Z"/><path class="cls-1" d="M28.75,147.07v-5.43H30a3.1,3.1,0,0,1,1.14.21,3,3,0,0,1,.92.57,2.6,2.6,0,0,1,.63.86,2.62,2.62,0,0,1,0,2.16,2.62,2.62,0,0,1-.63.86,2.9,2.9,0,0,1-.92.57,3.14,3.14,0,0,1-1.14.2H28.75Zm0.91-4.59v3.75H30a2.21,2.21,0,0,0,.78-0.14,1.94,1.94,0,0,0,.64-0.38,1.84,1.84,0,0,0,0-2.71,2,2,0,0,0-.64-0.39,2.23,2.23,0,0,0-.78-0.14h-0.3Z"/><path class="cls-1" d="M36.86,145.37H35l-0.76,1.7h-1l2.68-6,2.68,6h-1Zm-1.48-.88h1.09l-0.54-1.23Z"/><path class="cls-2" d="M90.77,60.06c0,0.09,0,.17,0,0.26a36,36,0,0,1-23,33.33q-1.28.5-2.61,0.9-0.4,1.33-.9,2.62a36,36,0,0,1-33.33,23H30.71a5,5,0,0,1,0-10A26,26,0,0,0,56.66,86a26,26,0,0,0,0-51.91A26,26,0,0,0,30.71,10a5,5,0,0,1,0-10H31A36,36,0,0,1,64.3,23q0.5,1.28.9,2.62,1.33,0.4,2.61.9a36,36,0,0,1,23,33.33C90.77,59.88,90.77,60,90.77,60.06Z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid section section-odd">
+    <div class="container">
+      A Nuvem Acadêmica Federada é um serviço que federa provedores de computação na nuvem no modelo infraestrutura como serviço (IaaS). O serviço usa o middleware fogbow para federar nuvens privadas da RNP e de seus clientes. Embora essas nuvens usem diferentes middleware para gerência das mesmas (ex. OpenStack, CloudStack, OpenNebula, etc.), o acesso à federação é feito através de uma API comum que segue (e estende) o padrão OCCI. A autenticação dos usuários é feita usando a CAFe. O acesso ao serviço pelos usuários é feito através de uma interface gráfica onde o usuário pode se autenticar, e após isso, criar máquinas virtuais nas nuvens da federação. Sempre que possível, as máquinas virtuais serão criadas em uma nuvem gerenciada pela instituição à qual o usuário pertence, caso contrário (se não existir tal nuvem ou se a cota do usuário na nuvem gerenciada por sua instituição tiver sido excedida), o sistema tentará criar a máquina virtual em uma outra nuvem da federação. Pedidos de usuários locais sempre são priorizados em relação a pedidos de usuários remotos, e os pedidos de dois usuários remotos são priorizados de acordo com as contribuições passadas das suas respectivas nuvens à federação.
+    </div>
   </div>
 
 </body>

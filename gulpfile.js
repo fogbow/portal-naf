@@ -31,10 +31,10 @@ gulp.task('clean', function() {
 });
 
 gulp.task('sass', function () {
-  return gulp.src(config.sassPath+'/*.scss')
+  return gulp.src(paths.sass+'/*.scss')
     .pipe(sass({outputStyle: 'compressed'})
       .on('error', sass.logError))
-    .pipe(gulp.dest(config.distPath+'/assets/css'));
+    .pipe(gulp.dest(paths.dist+'/assets/css'));
 });
 
 gulp.task('scripts', ['clean'], function () {
@@ -47,7 +47,8 @@ gulp.task('scripts', ['clean'], function () {
 });
 
 gulp.task('watch', function() {
+  gulp.watch(paths.sass, ['sass']);
   gulp.watch(paths.scripts, ['scripts']);
 });
 
-gulp.task('default', ['watch', 'scripts']);
+gulp.task('default', ['scripts', 'sass', 'watch']);

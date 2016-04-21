@@ -1,1 +1,55 @@
 /* Main SASS file */
+@import 'variables';
+
+$padding-base-vertical: 30px;
+
+body {
+  padding-top: $padding-base-vertical;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.logo {
+  width: 70%;
+}
+.logo-sm {
+  width: 50%;
+}
+svg {
+  .cls-1{fill:#fff;}
+  .cls-2 {fill: $brand-primary;}
+}
+
+.nav-main {
+  // @media screen and (min-width: $screen-md-min) { padding-top: $padding-large-vertical*2; }
+  .nav>li>a {
+    padding: 40px 15px;
+  }
+}
+.intro {
+  padding-top: $padding-large-vertical*16;
+  padding-bottom: $padding-large-vertical*16;
+  @media screen and (max-width: $screen-xs-max) {
+    padding-top: $padding-large-vertical*2;
+    padding-bottom: $padding-large-vertical*2;
+  }
+  @media screen and (max-width: $screen-sm-max) {
+    padding-top: $padding-large-vertical*3;
+    padding-bottom: $padding-large-vertical*3;
+  }
+}
+
+.call-to-action {
+  padding-top: $padding-base-vertical;
+  padding-bottom: $padding-base-vertical;
+}
+.section {
+  padding-top: $padding-large-vertical*6;
+  padding-bottom: $padding-large-vertical*6;
+}
+.section-odd {
+  background-color: $brand-primary;
+  color: $gray-darker;
+}
