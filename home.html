@@ -10,47 +10,164 @@
 </head>
 <body>
 
-  <div class="container">
+  <div class="navbar-main">
+    <div class="container-fluid">
 
-    <div class="row">
-      <div class="col-xs-4 col-xs-offset-4 col-sm-1 col-sm-offset-0">
-        <svg id="logo-naf-sm" data-name="NAF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.35 29.57">
-          <title>NAF</title>
-          <path class="cls-1" d="M4.54,12.55V18a0.06,0.06,0,0,1-.1,0L1.18,14.73a0.06,0.06,0,0,0-.1,0v2.95a0.06,0.06,0,0,1-.06.06h-1A0.06,0.06,0,0,1,0,17.72V12.11a0.06,0.06,0,0,1,.1,0l3.25,3.36a0.06,0.06,0,0,0,.1,0V12.55a0.06,0.06,0,0,1,.06-0.06h1A0.06,0.06,0,0,1,4.54,12.55Z"/><path class="cls-1" d="M7.54,11.9a0.06,0.06,0,0,0-.11,0L4.89,17.61l0,0.08a0.06,0.06,0,0,0,.05.08H6a0.06,0.06,0,0,0,.05,0l0.68-1.51a0.06,0.06,0,0,1,.05,0h1.5a0.06,0.06,0,0,1,.05,0L9,17.74a0.06,0.06,0,0,0,.05,0h1a0.06,0.06,0,0,0,.05-0.08Zm0.18,3.25H7.25a0.06,0.06,0,0,1-.05-0.08l0.23-.52a0.06,0.06,0,0,1,.11,0l0.23,0.52A0.06,0.06,0,0,1,7.72,15.15Z"/><path class="cls-1" d="M11.85,13.61v1.3a0.06,0.06,0,0,0,.06.06h1.91a0.06,0.06,0,0,1,.06.06V16a0.06,0.06,0,0,1-.06.06H11.91a0.06,0.06,0,0,0-.06.06v1.64a0.06,0.06,0,0,1-.06.06h-1a0.06,0.06,0,0,1-.06-0.06V12.56a0.06,0.06,0,0,1,.06-0.06h3.45a0.06,0.06,0,0,1,.06.06v0.93a0.06,0.06,0,0,1-.06.06H11.91A0.06,0.06,0,0,0,11.85,13.61Z"/><path class="cls-2" d="M22.35,14.79v0.06a8.88,8.88,0,0,1-5.65,8.21l-0.64.22q-0.1.33-.22,0.64a8.88,8.88,0,0,1-8.21,5.65H7.56a1.23,1.23,0,0,1,0-2.46A6.4,6.4,0,0,0,14,21.18,6.41,6.41,0,0,0,14,8.4,6.4,6.4,0,0,0,7.56,2.46,1.23,1.23,0,0,1,7.56,0H7.63a8.88,8.88,0,0,1,8.21,5.65Q16,6,16.05,6.29L16.7,6.52a8.88,8.88,0,0,1,5.65,8.21v0.06Z"/>
-        </svg>
-      </div>
-      <div class="col-xs-12 col-sm-11">
-        <ul class="nav nav-pills nav-justified nav-main">
-          <li role="presentation"><a href="#">Serviço</a></li>
-          <li role="presentation"><a href="#">Regras de pagamento</a></li>
-          <li role="presentation"><a href="#">Termos</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row intro">
-      <div class="col-sm-6 col-md-5 col-md-offset-1">
-          <h2>A <span class="text-primary">NAF</span> é um serviço que federa provedores de computação na nuvem no modelo infraestrutura como serviço (IaaS).</h2>
-          <div class="call-to-action">
-            <a href="http://naf.fogbowcloud.org/" class="btn btn-primary btn-lg" target="_blank">Autenticar</a>
-          </div>
-      </div>
-      <div class="col-sm-6 col-md-2 col-md-offset-2">
-        <div class="logo">
-          <svg id="logo-naf" data-name="Logo NAF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.77 147.07">
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-4 col-sm-1 col-sm-offset-0">
+          <a href="home.html">
+          <svg id="logo-naf-sm" class="logo-sm" data-name="NAF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.35 29.57">
             <title>NAF</title>
-            <path class="cls-1" d="M18.44,51V73.29a0.24,0.24,0,0,1-.42.17L4.8,59.83a0.24,0.24,0,0,0-.42.17V72a0.24,0.24,0,0,1-.24.24H0.24A0.24,0.24,0,0,1,0,72V49.2A0.24,0.24,0,0,1,.42,49l13.2,13.63A0.24,0.24,0,0,0,14,62.5V51a0.24,0.24,0,0,1,.24-0.24H18.2A0.24,0.24,0,0,1,18.44,51Z"/><path class="cls-1" d="M30.64,48.34a0.24,0.24,0,0,0-.44,0L19.88,71.53l-0.15.34a0.24,0.24,0,0,0,.22.34h4.23a0.24,0.24,0,0,0,.22-0.14l2.75-6.12a0.24,0.24,0,0,1,.22-0.14h6.09a0.24,0.24,0,0,1,.22.14l2.75,6.12a0.24,0.24,0,0,0,.22.14H40.9a0.24,0.24,0,0,0,.22-0.34Zm0.71,13.19H29.47a0.24,0.24,0,0,1-.22-0.34l1-2.13a0.24,0.24,0,0,1,.44,0l0.94,2.13A0.24,0.24,0,0,1,31.36,61.53Z"/><path class="cls-1" d="M48.14,55.29v5.27a0.24,0.24,0,0,0,.24.24h7.74a0.24,0.24,0,0,1,.24.24v3.79a0.24,0.24,0,0,1-.24.24H48.38a0.24,0.24,0,0,0-.24.24V72a0.24,0.24,0,0,1-.24.24H44A0.24,0.24,0,0,1,43.75,72V51A0.24,0.24,0,0,1,44,50.77H58a0.24,0.24,0,0,1,.24.24V54.8A0.24,0.24,0,0,1,58,55H48.38A0.24,0.24,0,0,0,48.14,55.29Z"/><path class="cls-1" d="M1.43,138H0.53V132.2L4.25,136v-3.47H5.17v5.69l-3.73-3.84V138Z"/><path class="cls-1" d="M8,138a2.76,2.76,0,0,1-.69-0.08,2,2,0,0,1-.51-0.2,1.55,1.55,0,0,1-.37-0.29,1.69,1.69,0,0,1-.25-0.34,2.19,2.19,0,0,1-.21-0.56,3,3,0,0,1,0-.58v-3.38H6.79V136s0,0,0,.09a1.13,1.13,0,0,0,0,.22,1.8,1.8,0,0,0,.11.28,1,1,0,0,0,.2.28,1.13,1.13,0,0,0,.34.22,1.27,1.27,0,0,0,.5.09A1,1,0,0,0,8.62,137,1.07,1.07,0,0,0,9,136.57a1.12,1.12,0,0,0,.13-0.39l0-.19v-3.4H10V136s0,0.13,0,.25a2.2,2.2,0,0,1-.07.4,2.48,2.48,0,0,1-.18.47,1.55,1.55,0,0,1-.35.45,1.86,1.86,0,0,1-.58.33A2.47,2.47,0,0,1,8,138Z"/><path class="cls-1" d="M10.35,132.89l0.83-.33,1.61,3.38,1.62-3.38,0.84,0.33-2.45,5.25Z"/><path class="cls-1" d="M15.92,132.58h3.59v0.88H16.83v1.78H19v0.88H16.83v1h2.68V138H15.92v-5.43Z"/><path class="cls-1" d="M24.86,134.77l-1.59,2.17-1.66-2.27L21.36,138H20.45l0.45-5.74,2.38,3.15,2.31-3.15L26,138H25.11Z"/><path class="cls-1" d="M32.77,136.31H30.91L30.15,138h-1l2.68-6,2.68,6h-1Zm-1.48-.88h1.09l-0.54-1.23Z"/><path class="cls-1" d="M37.8,138.1a2.89,2.89,0,0,1-1.13-.22,3,3,0,0,1-.93-0.6,2.84,2.84,0,0,1-.63-0.89,2.76,2.76,0,0,1,0-2.2,2.84,2.84,0,0,1,.63-0.89,3,3,0,0,1,.93-0.6,2.89,2.89,0,0,1,1.13-.22,2.92,2.92,0,0,1,1.07.2,3.17,3.17,0,0,1,.94.58l-0.63.62a2.13,2.13,0,0,0-1.38-.52,2,2,0,0,0-.78.15,2,2,0,0,0-1.07,1,1.87,1.87,0,0,0-.16.76A1.89,1.89,0,0,0,36,136a2,2,0,0,0,.43.62,2,2,0,0,0,.64.42,2,2,0,0,0,.78.15,2.13,2.13,0,0,0,1.38-.52l0.63,0.62a3.13,3.13,0,0,1-.94.58A2.92,2.92,0,0,1,37.8,138.1Z"/><path class="cls-1" d="M43.69,136.31H41.82L41.06,138h-1l2.68-6,2.68,6h-1Zm-1.48-.88H43.3l-0.54-1.23Z"/><path class="cls-1" d="M46.11,138v-5.43h1.22a3.08,3.08,0,0,1,1.13.21,3,3,0,0,1,.93.57,2.66,2.66,0,0,1,.63.86,2.66,2.66,0,0,1,0,2.16,2.67,2.67,0,0,1-.63.86,2.9,2.9,0,0,1-.93.57,3.12,3.12,0,0,1-1.13.2H46.11ZM47,133.42v3.75h0.3a2.22,2.22,0,0,0,.78-0.14,2,2,0,0,0,.64-0.39,1.77,1.77,0,0,0,.59-1.35,1.78,1.78,0,0,0-.59-1.36,2,2,0,0,0-.64-0.39,2.22,2.22,0,0,0-.78-0.14H47Z"/><path class="cls-1" d="M51,132.58H54.6v0.88H51.92v1.78h2.18v0.88H51.92v1H54.6V138H51v-5.43Zm1.72-1-0.53.66H51.59L52.21,131h1l0.62,1.29h-0.6Z"/><path class="cls-1" d="M59.93,134.77l-1.59,2.17-1.66-2.27L56.42,138H55.52L56,132.27l2.38,3.15,2.31-3.15L61.09,138H60.18Z"/><path class="cls-1" d="M62.13,132.58H63V138H62.13v-5.43Z"/><path class="cls-1" d="M66.71,138.1a2.91,2.91,0,0,1-1.14-.22,3,3,0,0,1-.92-0.6,2.78,2.78,0,0,1-.63-0.89,2.72,2.72,0,0,1,0-2.2,2.78,2.78,0,0,1,.63-0.89,3,3,0,0,1,.92-0.6,3,3,0,0,1,2.2,0,3.14,3.14,0,0,1,.94.58l-0.63.62a2.12,2.12,0,0,0-1.37-.52,2,2,0,0,0-.78.15,2.08,2.08,0,0,0-.64.42,2,2,0,0,0-.43.62,1.81,1.81,0,0,0-.16.76,1.83,1.83,0,0,0,.16.76,2,2,0,0,0,1.85,1.19,2.12,2.12,0,0,0,1.37-.52l0.63,0.62a3.1,3.1,0,0,1-.94.58A2.9,2.9,0,0,1,66.71,138.1Z"/><path class="cls-1" d="M72.6,136.31H70.73L70,138H69l2.68-6,2.68,6h-1Zm-1.48-.88h1.09l-0.54-1.23Z"/><path class="cls-1" d="M1.43,144.3H3.62v0.88H1.43v1.9H0.53v-5.43H4.11v0.88H1.43v1.78Z"/><path class="cls-1" d="M4.82,141.64H8.4v0.88H5.72v1.78H7.91v0.88H5.72v1H8.4v0.88H4.82v-5.43Z"/><path class="cls-1" d="M9.36,147.07v-5.43h1.22a3.08,3.08,0,0,1,1.13.21,3,3,0,0,1,.93.57,2.66,2.66,0,0,1,.63.86,2.66,2.66,0,0,1,0,2.16,2.67,2.67,0,0,1-.63.86,2.92,2.92,0,0,1-.93.57,3.12,3.12,0,0,1-1.13.2H9.36Zm0.91-4.59v3.75h0.3a2.2,2.2,0,0,0,.78-0.14,1.94,1.94,0,0,0,.64-0.38,1.84,1.84,0,0,0,.44-0.59,1.82,1.82,0,0,0,.16-0.76A1.78,1.78,0,0,0,12,143a2,2,0,0,0-.64-0.39,2.22,2.22,0,0,0-.78-0.14h-0.3Z"/><path class="cls-1" d="M14.24,141.64h3.59v0.88H15.14v1.78h2.18v0.88H15.14v1h2.68v0.88H14.24v-5.43Z"/><path class="cls-1" d="M19.95,144.81l0.47-.22,0.36-.16,0.22-.1A1,1,0,0,0,21.4,144a0.94,0.94,0,0,0,.15-0.52,0.91,0.91,0,0,0-.08-0.38,1,1,0,0,0-.21-0.31,1.07,1.07,0,0,0-.32-0.21,1,1,0,0,0-.4-0.08H19.68v4.6H18.78v-5.44h1.76a1.88,1.88,0,0,1,.73.14,1.94,1.94,0,0,1,.6.39,1.83,1.83,0,0,1,.4.58,1.7,1.7,0,0,1,.15.7,1.72,1.72,0,0,1-.27.94,2,2,0,0,1-.77.69l1.4,1.64-0.64.63Z"/><path class="cls-1" d="M26.34,145.37H24.47l-0.76,1.7h-1l2.68-6,2.68,6h-1Zm-1.48-.88h1.09l-0.54-1.23Z"/><path class="cls-1" d="M28.75,147.07v-5.43H30a3.1,3.1,0,0,1,1.14.21,3,3,0,0,1,.92.57,2.6,2.6,0,0,1,.63.86,2.62,2.62,0,0,1,0,2.16,2.62,2.62,0,0,1-.63.86,2.9,2.9,0,0,1-.92.57,3.14,3.14,0,0,1-1.14.2H28.75Zm0.91-4.59v3.75H30a2.21,2.21,0,0,0,.78-0.14,1.94,1.94,0,0,0,.64-0.38,1.84,1.84,0,0,0,0-2.71,2,2,0,0,0-.64-0.39,2.23,2.23,0,0,0-.78-0.14h-0.3Z"/><path class="cls-1" d="M36.86,145.37H35l-0.76,1.7h-1l2.68-6,2.68,6h-1Zm-1.48-.88h1.09l-0.54-1.23Z"/><path class="cls-2" d="M90.77,60.06c0,0.09,0,.17,0,0.26a36,36,0,0,1-23,33.33q-1.28.5-2.61,0.9-0.4,1.33-.9,2.62a36,36,0,0,1-33.33,23H30.71a5,5,0,0,1,0-10A26,26,0,0,0,56.66,86a26,26,0,0,0,0-51.91A26,26,0,0,0,30.71,10a5,5,0,0,1,0-10H31A36,36,0,0,1,64.3,23q0.5,1.28.9,2.62,1.33,0.4,2.61.9a36,36,0,0,1,23,33.33C90.77,59.88,90.77,60,90.77,60.06Z"/>
+            <path class="cls-1" d="M4.54,12.55V18a0.06,0.06,0,0,1-.1,0L1.18,14.73a0.06,0.06,0,0,0-.1,0v2.95a0.06,0.06,0,0,1-.06.06h-1A0.06,0.06,0,0,1,0,17.72V12.11a0.06,0.06,0,0,1,.1,0l3.25,3.36a0.06,0.06,0,0,0,.1,0V12.55a0.06,0.06,0,0,1,.06-0.06h1A0.06,0.06,0,0,1,4.54,12.55Z"/><path class="cls-1" d="M7.54,11.9a0.06,0.06,0,0,0-.11,0L4.89,17.61l0,0.08a0.06,0.06,0,0,0,.05.08H6a0.06,0.06,0,0,0,.05,0l0.68-1.51a0.06,0.06,0,0,1,.05,0h1.5a0.06,0.06,0,0,1,.05,0L9,17.74a0.06,0.06,0,0,0,.05,0h1a0.06,0.06,0,0,0,.05-0.08Zm0.18,3.25H7.25a0.06,0.06,0,0,1-.05-0.08l0.23-.52a0.06,0.06,0,0,1,.11,0l0.23,0.52A0.06,0.06,0,0,1,7.72,15.15Z"/><path class="cls-1" d="M11.85,13.61v1.3a0.06,0.06,0,0,0,.06.06h1.91a0.06,0.06,0,0,1,.06.06V16a0.06,0.06,0,0,1-.06.06H11.91a0.06,0.06,0,0,0-.06.06v1.64a0.06,0.06,0,0,1-.06.06h-1a0.06,0.06,0,0,1-.06-0.06V12.56a0.06,0.06,0,0,1,.06-0.06h3.45a0.06,0.06,0,0,1,.06.06v0.93a0.06,0.06,0,0,1-.06.06H11.91A0.06,0.06,0,0,0,11.85,13.61Z"/><path class="cls-2" d="M22.35,14.79v0.06a8.88,8.88,0,0,1-5.65,8.21l-0.64.22q-0.1.33-.22,0.64a8.88,8.88,0,0,1-8.21,5.65H7.56a1.23,1.23,0,0,1,0-2.46A6.4,6.4,0,0,0,14,21.18,6.41,6.41,0,0,0,14,8.4,6.4,6.4,0,0,0,7.56,2.46,1.23,1.23,0,0,1,7.56,0H7.63a8.88,8.88,0,0,1,8.21,5.65Q16,6,16.05,6.29L16.7,6.52a8.88,8.88,0,0,1,5.65,8.21v0.06Z"/>
           </svg>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-11">
+          <div class="col-sm-3">
+            <ul class="nav nav-pills nav-justified nav-main">
+              <li role="presentation"><a href="#comofunciona" class="main-menu-item">Como funciona?</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <ul class="nav nav-pills nav-justified nav-main">
+              <li role="presentation"><a href="#comoaderir" class="main-menu-item">Como aderir ao serviço?</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <ul class="nav nav-pills nav-justified nav-main">
+              <li role="presentation"><a href="#termos" class="main-menu-item">Termos de uso</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 text-center">
+            <a href="http://naf.fogbowcloud.org/" class="btn btn-primary main-menu-item-featured">Autenticar</a>
+          </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="landing-wrapper">
+      <div class="row intro">
+        <div class="col-sm-6 col-md-5 col-md-offset-1">
+            <h2>A <span class="text-primary">NAF</span> é um serviço que federa provedores de computação na nuvem no modelo infraestrutura como serviço (IaaS).</h2>
+        </div>
+        <div class="col-sm-6 col-md-2 col-md-offset-2">
+          <div class="logo">
+            <svg id="logo-naf" data-name="Logo NAF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.77 147.07">
+              <title>NAF</title>
+              <path class="cls-1" d="M18.44,51V73.29a0.24,0.24,0,0,1-.42.17L4.8,59.83a0.24,0.24,0,0,0-.42.17V72a0.24,0.24,0,0,1-.24.24H0.24A0.24,0.24,0,0,1,0,72V49.2A0.24,0.24,0,0,1,.42,49l13.2,13.63A0.24,0.24,0,0,0,14,62.5V51a0.24,0.24,0,0,1,.24-0.24H18.2A0.24,0.24,0,0,1,18.44,51Z"/><path class="cls-1" d="M30.64,48.34a0.24,0.24,0,0,0-.44,0L19.88,71.53l-0.15.34a0.24,0.24,0,0,0,.22.34h4.23a0.24,0.24,0,0,0,.22-0.14l2.75-6.12a0.24,0.24,0,0,1,.22-0.14h6.09a0.24,0.24,0,0,1,.22.14l2.75,6.12a0.24,0.24,0,0,0,.22.14H40.9a0.24,0.24,0,0,0,.22-0.34Zm0.71,13.19H29.47a0.24,0.24,0,0,1-.22-0.34l1-2.13a0.24,0.24,0,0,1,.44,0l0.94,2.13A0.24,0.24,0,0,1,31.36,61.53Z"/><path class="cls-1" d="M48.14,55.29v5.27a0.24,0.24,0,0,0,.24.24h7.74a0.24,0.24,0,0,1,.24.24v3.79a0.24,0.24,0,0,1-.24.24H48.38a0.24,0.24,0,0,0-.24.24V72a0.24,0.24,0,0,1-.24.24H44A0.24,0.24,0,0,1,43.75,72V51A0.24,0.24,0,0,1,44,50.77H58a0.24,0.24,0,0,1,.24.24V54.8A0.24,0.24,0,0,1,58,55H48.38A0.24,0.24,0,0,0,48.14,55.29Z"/><path class="cls-1" d="M1.43,138H0.53V132.2L4.25,136v-3.47H5.17v5.69l-3.73-3.84V138Z"/><path class="cls-1" d="M8,138a2.76,2.76,0,0,1-.69-0.08,2,2,0,0,1-.51-0.2,1.55,1.55,0,0,1-.37-0.29,1.69,1.69,0,0,1-.25-0.34,2.19,2.19,0,0,1-.21-0.56,3,3,0,0,1,0-.58v-3.38H6.79V136s0,0,0,.09a1.13,1.13,0,0,0,0,.22,1.8,1.8,0,0,0,.11.28,1,1,0,0,0,.2.28,1.13,1.13,0,0,0,.34.22,1.27,1.27,0,0,0,.5.09A1,1,0,0,0,8.62,137,1.07,1.07,0,0,0,9,136.57a1.12,1.12,0,0,0,.13-0.39l0-.19v-3.4H10V136s0,0.13,0,.25a2.2,2.2,0,0,1-.07.4,2.48,2.48,0,0,1-.18.47,1.55,1.55,0,0,1-.35.45,1.86,1.86,0,0,1-.58.33A2.47,2.47,0,0,1,8,138Z"/><path class="cls-1" d="M10.35,132.89l0.83-.33,1.61,3.38,1.62-3.38,0.84,0.33-2.45,5.25Z"/><path class="cls-1" d="M15.92,132.58h3.59v0.88H16.83v1.78H19v0.88H16.83v1h2.68V138H15.92v-5.43Z"/><path class="cls-1" d="M24.86,134.77l-1.59,2.17-1.66-2.27L21.36,138H20.45l0.45-5.74,2.38,3.15,2.31-3.15L26,138H25.11Z"/><path class="cls-1" d="M32.77,136.31H30.91L30.15,138h-1l2.68-6,2.68,6h-1Zm-1.48-.88h1.09l-0.54-1.23Z"/><path class="cls-1" d="M37.8,138.1a2.89,2.89,0,0,1-1.13-.22,3,3,0,0,1-.93-0.6,2.84,2.84,0,0,1-.63-0.89,2.76,2.76,0,0,1,0-2.2,2.84,2.84,0,0,1,.63-0.89,3,3,0,0,1,.93-0.6,2.89,2.89,0,0,1,1.13-.22,2.92,2.92,0,0,1,1.07.2,3.17,3.17,0,0,1,.94.58l-0.63.62a2.13,2.13,0,0,0-1.38-.52,2,2,0,0,0-.78.15,2,2,0,0,0-1.07,1,1.87,1.87,0,0,0-.16.76A1.89,1.89,0,0,0,36,136a2,2,0,0,0,.43.62,2,2,0,0,0,.64.42,2,2,0,0,0,.78.15,2.13,2.13,0,0,0,1.38-.52l0.63,0.62a3.13,3.13,0,0,1-.94.58A2.92,2.92,0,0,1,37.8,138.1Z"/><path class="cls-1" d="M43.69,136.31H41.82L41.06,138h-1l2.68-6,2.68,6h-1Zm-1.48-.88H43.3l-0.54-1.23Z"/><path class="cls-1" d="M46.11,138v-5.43h1.22a3.08,3.08,0,0,1,1.13.21,3,3,0,0,1,.93.57,2.66,2.66,0,0,1,.63.86,2.66,2.66,0,0,1,0,2.16,2.67,2.67,0,0,1-.63.86,2.9,2.9,0,0,1-.93.57,3.12,3.12,0,0,1-1.13.2H46.11ZM47,133.42v3.75h0.3a2.22,2.22,0,0,0,.78-0.14,2,2,0,0,0,.64-0.39,1.77,1.77,0,0,0,.59-1.35,1.78,1.78,0,0,0-.59-1.36,2,2,0,0,0-.64-0.39,2.22,2.22,0,0,0-.78-0.14H47Z"/><path class="cls-1" d="M51,132.58H54.6v0.88H51.92v1.78h2.18v0.88H51.92v1H54.6V138H51v-5.43Zm1.72-1-0.53.66H51.59L52.21,131h1l0.62,1.29h-0.6Z"/><path class="cls-1" d="M59.93,134.77l-1.59,2.17-1.66-2.27L56.42,138H55.52L56,132.27l2.38,3.15,2.31-3.15L61.09,138H60.18Z"/><path class="cls-1" d="M62.13,132.58H63V138H62.13v-5.43Z"/><path class="cls-1" d="M66.71,138.1a2.91,2.91,0,0,1-1.14-.22,3,3,0,0,1-.92-0.6,2.78,2.78,0,0,1-.63-0.89,2.72,2.72,0,0,1,0-2.2,2.78,2.78,0,0,1,.63-0.89,3,3,0,0,1,.92-0.6,3,3,0,0,1,2.2,0,3.14,3.14,0,0,1,.94.58l-0.63.62a2.12,2.12,0,0,0-1.37-.52,2,2,0,0,0-.78.15,2.08,2.08,0,0,0-.64.42,2,2,0,0,0-.43.62,1.81,1.81,0,0,0-.16.76,1.83,1.83,0,0,0,.16.76,2,2,0,0,0,1.85,1.19,2.12,2.12,0,0,0,1.37-.52l0.63,0.62a3.1,3.1,0,0,1-.94.58A2.9,2.9,0,0,1,66.71,138.1Z"/><path class="cls-1" d="M72.6,136.31H70.73L70,138H69l2.68-6,2.68,6h-1Zm-1.48-.88h1.09l-0.54-1.23Z"/><path class="cls-1" d="M1.43,144.3H3.62v0.88H1.43v1.9H0.53v-5.43H4.11v0.88H1.43v1.78Z"/><path class="cls-1" d="M4.82,141.64H8.4v0.88H5.72v1.78H7.91v0.88H5.72v1H8.4v0.88H4.82v-5.43Z"/><path class="cls-1" d="M9.36,147.07v-5.43h1.22a3.08,3.08,0,0,1,1.13.21,3,3,0,0,1,.93.57,2.66,2.66,0,0,1,.63.86,2.66,2.66,0,0,1,0,2.16,2.67,2.67,0,0,1-.63.86,2.92,2.92,0,0,1-.93.57,3.12,3.12,0,0,1-1.13.2H9.36Zm0.91-4.59v3.75h0.3a2.2,2.2,0,0,0,.78-0.14,1.94,1.94,0,0,0,.64-0.38,1.84,1.84,0,0,0,.44-0.59,1.82,1.82,0,0,0,.16-0.76A1.78,1.78,0,0,0,12,143a2,2,0,0,0-.64-0.39,2.22,2.22,0,0,0-.78-0.14h-0.3Z"/><path class="cls-1" d="M14.24,141.64h3.59v0.88H15.14v1.78h2.18v0.88H15.14v1h2.68v0.88H14.24v-5.43Z"/><path class="cls-1" d="M19.95,144.81l0.47-.22,0.36-.16,0.22-.1A1,1,0,0,0,21.4,144a0.94,0.94,0,0,0,.15-0.52,0.91,0.91,0,0,0-.08-0.38,1,1,0,0,0-.21-0.31,1.07,1.07,0,0,0-.32-0.21,1,1,0,0,0-.4-0.08H19.68v4.6H18.78v-5.44h1.76a1.88,1.88,0,0,1,.73.14,1.94,1.94,0,0,1,.6.39,1.83,1.83,0,0,1,.4.58,1.7,1.7,0,0,1,.15.7,1.72,1.72,0,0,1-.27.94,2,2,0,0,1-.77.69l1.4,1.64-0.64.63Z"/><path class="cls-1" d="M26.34,145.37H24.47l-0.76,1.7h-1l2.68-6,2.68,6h-1Zm-1.48-.88h1.09l-0.54-1.23Z"/><path class="cls-1" d="M28.75,147.07v-5.43H30a3.1,3.1,0,0,1,1.14.21,3,3,0,0,1,.92.57,2.6,2.6,0,0,1,.63.86,2.62,2.62,0,0,1,0,2.16,2.62,2.62,0,0,1-.63.86,2.9,2.9,0,0,1-.92.57,3.14,3.14,0,0,1-1.14.2H28.75Zm0.91-4.59v3.75H30a2.21,2.21,0,0,0,.78-0.14,1.94,1.94,0,0,0,.64-0.38,1.84,1.84,0,0,0,0-2.71,2,2,0,0,0-.64-0.39,2.23,2.23,0,0,0-.78-0.14h-0.3Z"/><path class="cls-1" d="M36.86,145.37H35l-0.76,1.7h-1l2.68-6,2.68,6h-1Zm-1.48-.88h1.09l-0.54-1.23Z"/><path class="cls-2" d="M90.77,60.06c0,0.09,0,.17,0,0.26a36,36,0,0,1-23,33.33q-1.28.5-2.61,0.9-0.4,1.33-.9,2.62a36,36,0,0,1-33.33,23H30.71a5,5,0,0,1,0-10A26,26,0,0,0,56.66,86a26,26,0,0,0,0-51.91A26,26,0,0,0,30.71,10a5,5,0,0,1,0-10H31A36,36,0,0,1,64.3,23q0.5,1.28.9,2.62,1.33,0.4,2.61.9a36,36,0,0,1,23,33.33C90.77,59.88,90.77,60,90.77,60.06Z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </div>
 
+  <a id="comofunciona" name="comofunciona"></a>
+  <div class="container-fluid section section-even">
+    <div class="container">
+      <h2 class="text-center">Como funciona?</h2>
+      <br>
+      <p>O serviço é oferecido através de uma espécie de câmara de compensação que coloca à disposição da comunidade, em um determinado instante de tempo, os recursos ociosos das nuvens privadas para que os mesmos sejam usados por usuários de outras nuvens que naquele mesmo momento estão experimentando um excesso de demanda. Um mecanismo de priorização faz com que essa troca de recursos seja ao mesmo tempo satisfatória, ou seja, melhore a qualidade de serviço oferecida aos usuários da federação, e justa, ou seja, faça com que provedores consigam retirar da federação em tempos de alta demanda local aproximadamente aquilo que colocam na federação em momentos de baixa demanda local. Alguns provedores poderão oferecer recursos sem necessariamente querer receber recursos de volta (por exemplo, esse é o caso da RNP), sendo portanto altruístas e possibilitando que uma parcela de usuários que não são provedores de recurso possam, mesmo assim, fazer uso da federação.</p>
+      <p>
+        A Nuvem Acadêmica Federada é um serviço que federa provedores de computação na nuvem no modelo infraestrutura como serviço (IaaS). O serviço usa o middleware <a href="http://fogbowcloud.org/">fogbow</a> para federar nuvens privadas da RNP e de seus clientes. Embora essas nuvens usem diferentes middleware para gerência das mesmas (ex. OpenStack, CloudStack, OpenNebula, etc.), o acesso à federação é feito através de uma API comum que segue (e estende) o padrão <a href="http://occi-wg.org/">OCCI</a>. A autenticação dos usuários é feita usando a CAFe. O acesso ao serviço pelos usuários é feito através de uma interface gráfica onde o usuário pode se autenticar, e após isso, criar máquinas virtuais nas nuvens da federação. Sempre que possível, as máquinas virtuais serão criadas em uma nuvem gerenciada pela instituição à qual o usuário pertence, caso contrário (se não existir tal nuvem ou se a cota do usuário na nuvem gerenciada por sua instituição tiver sido excedida), o sistema tentará criar a máquina virtual em uma outra nuvem da federação. Pedidos de usuários locais sempre são priorizados em relação a pedidos de usuários remotos, e os pedidos de dois usuários remotos são priorizados de acordo com as contribuições passadas das suas respectivas nuvens à federação.
+      </p>
+    </div>
+  </div>
+
+  <a id="comoaderir" name="comoaderir"></a>
   <div class="container-fluid section section-odd">
     <div class="container">
-      A Nuvem Acadêmica Federada é um serviço que federa provedores de computação na nuvem no modelo infraestrutura como serviço (IaaS). O serviço usa o middleware fogbow para federar nuvens privadas da RNP e de seus clientes. Embora essas nuvens usem diferentes middleware para gerência das mesmas (ex. OpenStack, CloudStack, OpenNebula, etc.), o acesso à federação é feito através de uma API comum que segue (e estende) o padrão OCCI. A autenticação dos usuários é feita usando a CAFe. O acesso ao serviço pelos usuários é feito através de uma interface gráfica onde o usuário pode se autenticar, e após isso, criar máquinas virtuais nas nuvens da federação. Sempre que possível, as máquinas virtuais serão criadas em uma nuvem gerenciada pela instituição à qual o usuário pertence, caso contrário (se não existir tal nuvem ou se a cota do usuário na nuvem gerenciada por sua instituição tiver sido excedida), o sistema tentará criar a máquina virtual em uma outra nuvem da federação. Pedidos de usuários locais sempre são priorizados em relação a pedidos de usuários remotos, e os pedidos de dois usuários remotos são priorizados de acordo com as contribuições passadas das suas respectivas nuvens à federação.
+      <h2 class="text-center">Como aderir ao serviço?</h2>
+      <br>
+      <p>O serviço é oferecido através de uma espécie de câmara de compensação que coloca à disposição da comunidade, em um determinado instante de tempo, os recursos ociosos das nuvens privadas para que os mesmos sejam usados por usuários de outras nuvens que naquele mesmo momento estão experimentando um excesso de demanda. Um mecanismo de priorização faz com que essa troca de recursos seja ao mesmo tempo satisfatória, ou seja, melhore a qualidade de serviço oferecida aos usuários da federação, e justa, ou seja, faça com que provedores consigam retirar da federação em tempos de alta demanda local aproximadamente aquilo que colocam na federação em momentos de baixa demanda local. Alguns provedores poderão oferecer recursos sem necessariamente querer receber recursos de volta (por exemplo, esse é o caso da RNP), sendo portanto altruístas e possibilitando que uma parcela de usuários que não são provedores de recurso possam, mesmo assim, fazer uso da federação.</p>
     </div>
+  </div>
+
+  <a id="termos" name="termos"></a>
+  <div class="container-fluid section section-even">
+    <div class="container">
+      <h2 class="text-center">Termos de uso</h2>
+      <br>
+      <h4>1. Introdução</h4>
+      <p>
+        O serviço Nuvem Acadêmica Federada (de agora em diante designado apenas por "serviço") é fornecido pela Universidade Federal de Campina Grande (de agora em diante designada apenas por "UFCG") para a comunidade acadêmica e de pesquisa do Brasil, a fim de promover seus objetivos acadêmicos de ensino e de pesquisa em todo o país. O serviço é uma federação de provedores de computação na nuvem que fornecem seus serviços segundo um modelo de infraestrutura como um serviço (IaaS). O serviço usa o sistema fogbow (<a href="http://fogbowcloud.org/">http://fogbowcloud.org/</a>) para federar nuvens privadas geridas pela RNP e seus clientes. Estas nuvens privadas podem usar sistemas diferentes para a sua gestão interna (por exemplo, OpenStack, CloudStack, OpenNebula etc.). No entanto, o acesso à federação é feito através de uma API comum implementada pelo fogbow, que segue o padrão OCCI (<a href="http://occi-wg.org/about/specification/">http://occi-wg.org/about/specification/</a>).
+        O serviço é uma federação de provedores de computação na nuvem que fornecem seus serviços segundo um modelo de infraestrutura como um serviço (IaaS). O serviço usa o sistema fogbow (http://fogbowcloud.org/) para federar nuvens privadas geridas pela RNP e seus clientes. Estas nuvens privadas podem usar sistemas diferentes para a sua gestão interna (por exemplo, OpenStack, CloudStack, OpenNebula etc.). No entanto, o acesso à federação é feito através de uma API comum implementada pelo fogbow, que segue o padrão OCCI (<a href="http://occi-wg.org/about/specification/">http://occi-wg.org/about/specification/</a>).
+      <p/>
+      <p>
+        O acesso ao serviço pelos usuários é feito através de um portal na Web (<a href="http://naf.fogbowcloud.org/">http://naf.fogbowcloud.org/</a>) onde o usuário pode efetuar o login, e depois disso, criar máquinas virtuais nas nuvens da federação. A autenticação do usuário é feita usando a Comunidade Acadêmica Federada (CAFe) gerida pela RNP (<a href="https://portal.rnp.br/web/servicos/cafe">https://portal.rnp.br/web/servicos/cafe</a>). Sempre que possível, as máquinas virtuais são criadas em uma nuvem gerida pela instituição a que pertence o usuário que fez a solicitação, caso contrário (se não houver tal nuvem ou se a cota do usuário na nuvem gerido por sua instituição tiver sido ultrapassada), o sistema tenta criar a máquina virtual em outra nuvem da federação. Solicitações de usuários locais são sempre priorizadas em detrimento de solicitações de usuários remotos. Solicitações de usuários remotos diferentes são priorizadas de acordo com as contribuições passadas feitas à federação pelas nuvens geridas por suas respectivas instituições.
+      </p>
+      <h4>2. Usuários</h4>
+      <p>
+        O serviço é voltado à comunidade acadêmica brasileira de ensino e pesquisa (estudantes, professores, pesquisadores etc.).
+      </p>
+      <h4>3. Uso não permitido</h4>
+      <p>
+        O serviço está disponível para os beneficiários, a fim de proporcionar o seu uso da forma mais ampla possível em suas atividades de ensino e pesquisa. As contas usadas pelos beneficiários do serviço são pessoais. É proibida a distribuição de contas a terceiros. A utilização direta ou indireta do serviço, a fim de promover qualquer tipo de finalidade comercial é expressamente proibida, assim como qualquer uso que viola de alguma forma as leis e disposições em vigor.
+        É proibido usar o serviço para enviar mensagens e baixar, publicar ou distribuir conteúdo que:
+        Seja impróprio, difamatório, ilegal ou obsceno.
+        Infrinja as patentes, marcas, direitos autorais, segredos comerciais ou outros direitos de propriedade de terceiros.
+        Encaminha esquemas de pirâmide, cartas em cadeia ou mensagens não solicitadas e anúncios de produtos e serviços.
+        Promova e/ou forneça informações educacionais em relação a atividades ilegais e/ou promova a violência natural e/ou danos contra grupos ou pessoas.
+        O uso malicioso do serviço para qualquer tipo de ataques eletrônicos com o objetivo de dificultar o uso do próprio serviço ou a utilização de serviços de terceiros, para tirar proveito de vulnerabilidades, para ter acesso ilegal aos sistemas de terceiros e para comprometer dados pessoais é proibida. Mais especificamente, mas não exclusivamente:
+        É proibido agir com o objetivo de inibir e/ou interromper o funcionamento do serviço e/ou servidores e/ou as redes conectados ao serviço, bem como ignorar as solicitações e procedimentos de manutenção e configuração, bem como as políticas e a regulação das redes conectadas ao serviço.
+        É proibido obstruir e/ou inibir qualquer outro usuário de uma utilização adequada do serviço.
+        É proibido compartilhar software que contenha vírus, cavalos de Tróia ou software corrompido, que visa tirar partido de vulnerabilidades com o objectivo de atacar eletronicamente e ter acesso ilegal aos sistemas de terceiros.
+        É proibido usar aplicações como robôs ou aplicações para a pesquisa/recuperação de um site ou de outras máquinas para a recuperação ou a criação de um índice/diretório de uma parte do serviço ou para a recolha de informações sobre os usuários para qualquer tipo de propósito não permitido.
+        São proibidos ataques dos tipos Port Scanning, Network Scanning, negação de serviço, e negação de serviço distribuída.
+        É proibido usar o serviço para a criação de páginas na Web a fim de comprometer dados pessoais ou senhas de usuários do serviço e/ou terceiros.
+        É proibido manter uma servidor de retransmissão (relay) aberto (correio eletrônico ou proxy).
+        É proibido manter um nó TOR EXIT.
+        É proibida a Operação/Manutenção de qualquer servidor de jogo, a menos que seu uso seja claramente identificada para fins educacionais/pesquisa.
+        É proibido usar, promover, apoiar ou informar terceiros no que se refere à utilização do serviço de qualquer maneira ilegal ou de uma forma que viola esses termos de uso.
+        É proibido difamar, insultar, assediar, perseguir, ameaçar ou de qualquer outra forma violar os direitos legais (tais como o direito à privacidade e o direito de publicidade) de terceiros.
+        É proibido excluir qualquer tipo de indicações de direitos autorais, marcas ou outros direitos de propriedade intelectual que são incluídos no serviço.
+      </p>
+      <h4>4. Direitos de autoria (Copyright)</h4>
+      <p>
+        Todos os itens acima são aplicados e em vigor apenas para o conteúdo legal e só na condição de que o uso e a publicação do conteúdo não viola a lei. A utilização e distribuição do conteúdo que viole os direitos autorais de terceiros viola também os presentes termos de uso do serviço.
+        A UFCG não é de forma alguma responsável nem pode controlar a existência de tais direitos. Consequentemente, a UFCG considera que cada usuário é um titular/proprietário dos referidos direitos e garantias - por aceitar os presentes termos - que ele/ela tem os direitos necessários para que o uso e a publicação do conteúdo não viola a lei e as disposições relevantes.
+      </p>
+      <h4>5. Interrupção ou cancelamento</h4>
+      <p>
+        Em caso de violação dos termos de uso do serviço, a UFCG pode rever, reexaminar e/ou deixar de fornecer o serviço para o usuário infrator e/ou retirar o conteúdo que foi salvo por ele/ela sem qualquer aviso prévio.
+      </p>
+      <h4>6. Privacidade</h4>
+      <p>
+        Para que a UFCG possa fornecer o seu serviço, sem quaisquer impedimentos, a UFCG pode coletar dados estatísticos gerais sobre o fluxo e otimização/desenvolvimento da rede e dos recursos computacionais da infraestrutura que executa o sistema fogbow. A UFCG não têm acesso direto, não tem interesse em tê-lo e não irá coletar quaisquer dados específicos no que diz respeito a serviços específicos que estão hospedados em máquinas virtuais ou pelos usuários finais dos serviços hospedados. As informações que venham a ser recolhidas através do serviço pela UFCG será utilizada de acordo com a legislação em vigor no Brasil.
+        Estes dados podem ser usados ​​a fim de controlar o funcionamento do serviço, para melhorar a qualidade do serviço, ou para fins de pesquisa, e podem ser divulgados a terceiros, desde que sejam apropriadamente manipulados a fim de que os dados pessoais dos gestores e/ou dos usuários finais não sejam divulgados. A UFCG pode divulgar informações sobre o uso de máquinas virtuais quando a lei e os serviços competentes assim exigirem.
+      </p>
+      <h4>7. Software</h4>
+      <p>
+        Se a UFCG fornece determinado software para o usuário, a fim de utilizar o serviço, o serviço será utilizado de acordo com a licença e os termos de uso que o usuário será solicitado a aceitar a fim de utilizar o software. Se ele/ela não é solicitado a aceitar alguma licença de utilização ou termos de uso, a UFCG fornece a licença para usar o software específico somente para o uso aprovado do serviço. A UFCG pode monitorar automaticamente a versão do software que será oferecido. Este software pode ser atualizado, melhorado, e desenvolvido. Em caso de versões atualizadas o usuário será solicitado a aceitar a licença e termos de uso da versão atualizada.
+      </p>
+      <p>
+        O usuário (proprietário de uma ou mais máquinas virtuais) e só ele/ela tem a responsabilidade de guardar a licença de uso e de cumprir com os termos da licença de uso do software que ele/ela instala e executa nas máquinas virtuais.
+      </p>
+      <h4>8. Responsabilidade da UFCG</h4>
+      <p>
+        A UFCG não assume qualquer responsabilidade pelo conteúdo e os dados distribuídos através do serviço. A decisão sobre a legalidade do conteúdo - dados e/ou a decisão para o lançamento e distribuição de conteúdos e dados específicos pertence exclusivamente ao usuário.
+        A UFCG toma todas as medidas necessárias a fim de evitar qualquer abuso, arbitrariedade, dano e perda de dados e conteúdo; no entanto, a UFCG não garante que tal possibilidade não existe em qualquer caso e não tem qualquer responsabilidade se um evento como esse ocorrer. Os usuários do serviço devem guardar os seus próprios backups para lidar com tais incidentes.
+        A UFCG toma todas as medidas necessárias a fim de alcançar a maior disponibilidade do serviço; no entanto, a UFCG não oferece qualquer garantia em relação à disponibilidade do serviço que a faça ser responsabilizada e/ou responsável ​​por danos diretos ou indiretos devidos à indisponibilidade do serviço por qualquer período de tempo.
+        A UFCG não pode ser responsabilizada e/ou responsável ​​pela perda de dados e conteúdos distribuídos através do serviço, bem como por quaisquer danos relevantes. Além disso, a UFCG não garante nem tem qualquer responsabilidade pela exatidão dos dados e do conteúdo disponível através do seu serviço.
+        Opiniões ou textos publicados por meio do serviço não representam, em caso algum opiniões oficiais da UFCG, que não pode ser responsabilizada pelo seu conteúdo.
+        De acordo com a lei relativa à proteção de dados pessoais, a UFCG não controla ou monitora de forma alguma o conteúdo da informação distribuída e dos dados distribuídos, de forma que a UFCG se isenta de qualquer tipo de responsabilidade por eventual distribuição em sua rede de produtos ou serviços através dos quais a posse ou a distribuição do conteúdo constitui violação de direitos autorais ou outro delito.
+        A UFCG vai desprender todos os esforços possíveis para o funcionamento ininterrupto e confiável do serviço. Não obstante, a UFCG pode deixar de fornecer o serviço e/ou modificar determinadas configurações do serviço a qualquer momento sem notificação prévia. A interrupção da prestação do serviço significa automaticamente a interrupção de seu uso por seus usuários, sem qualquer direito de indenização.
+      </p>
+      <h4>9. Aplicação dos termos</h4>
+      <p>
+        Os presentes termos de uso substituem qualquer acordo verbal ou escrito prévio ou outro contrato, convenção, relacionadas ao serviço. Cada usuário tem o direito de retirar a sua/seu consentimento relativos aos termos de uso, mas se ele/ela faz isso, então a UFCG deixará de fornecer o serviço para esse usuário.
+        A legislação brasileira rege os termos de uso descritos acima. Qualquer litígio em relação a estes termos de uso serão resolvidos pelos tribunais de justiça em Campina Grande, Paraíba, Brasil.
+      </p>
+    </div>
+  </div>
+
+  <div class="call-to-action text-center">
+    <a href="http://naf.fogbowcloud.org/" class="btn btn-primary btn-lg">Autenticar</a>
   </div>
 
 </body>
