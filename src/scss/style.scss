@@ -4,7 +4,6 @@
 $padding-base-vertical: 30px;
 
 body {
-  padding-top: 200px;
 }
 
 h2 {
@@ -27,12 +26,6 @@ h2 {
 svg {
   .cls-1{fill:#fff;}
   .cls-2 {fill: $brand-primary;}
-}
-.navbar-main {
-  position: fixed;
-  top: 0;
-  background-color: $gray-dark;
-  z-index: 1;
 }
 .nav-main {
   // @media screen and (min-width: $screen-md-min) { padding-top: $padding-large-vertical*2; }
