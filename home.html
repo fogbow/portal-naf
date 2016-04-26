@@ -51,7 +51,7 @@
     <div class="landing-wrapper">
       <div class="row intro">
         <div class="col-sm-6 col-md-5 col-md-offset-1">
-            <h2>A <span class="text-primary">A NAF</span> é um serviço que federa provedores de computação na nuvem no modelo infraestrutura como serviço (IaaS) para melhor atender seus respectivos usuários de forma colaborativa.</h2>
+            <h2>A <span class="text-primary">NAF</span> é um serviço que federa provedores de computação na nuvem no modelo infraestrutura como serviço (IaaS) para melhor atender seus respectivos usuários de forma colaborativa.</h2>
         </div>
         <div class="col-sm-6 col-md-2 col-md-offset-2">
           <div class="logo">
@@ -69,107 +69,113 @@
   <a id="comofunciona" name="comofunciona"></a>
   <div class="container-fluid section section-even">
     <div class="container">
-      <h2 class="text-center">Como funciona?</h2>
-      <br>
-      <p>A RNP oferece o serviço <a href="https://compute.rnp.br/">Compute@RNP</a> que permite que usuários do serviço possam criar sob demanda máquinas virtuais para atender suas demandas computacionais. A Nuvem Acadêmica Federada (NAF) é um serviço que expande o serviço <a href="https://compute.rnp.br/">Compute@RNP</a> através da federação de provedores de computação na nuvem que seguem o modelo infraestrutura como serviço (IaaS). A ideia é que os usuários das instituições clientes da RNP possam não só usar o serviço <a href="https://compute.rnp.br/">Compute@RNP</a>, mas também serviços similares oferecidos pelas instituições clientes da RNP.<\p>
-      <p>O serviço usa o middleware <a href="http://fogbowcloud.org/">Fogbow</a> para federar as nuvens privadas da RNP e de seus clientes envolvidos na federação. Embora essas nuvens possam usar diferentes middleware para gerência das mesmas (ex. OpenStack, CloudStack, OpenNebula, etc.), o acesso à federação é feito através de uma API comum que segue (e estende) o padrão <a href="http://occi-wg.org/">OCCI</a>, implementada pelo <a href="http://fogbowcloud.org/">Fogbow</a>.</p>
-      <p>De forma similar ao que acontece com o serviço <a href="https://compute.rnp.br/">Compute@RNP</a>, a autenticação dos usuários na NAF é feita usando a Comunidade Acadêmica Federada (<a href="https://portal.rnp.br/web/servicos/cafe">CAFe</a>). O acesso ao serviço pelos usuários é feito através de uma interface gráfica onde o usuário pode se autenticar, e após isso, criar máquinas virtuais nas nuvens da federação.</p>
-      <p>O serviço da NAF é oferecido através de uma espécie de câmara de compensação que coloca à disposição da comunidade, em um determinado instante de tempo, os recursos ociosos das nuvens privadas para que os mesmos sejam usados por usuários de outras nuvens que naquele mesmo momento estão experimentando um excesso de demanda. Um mecanismo de priorização faz com que essa troca de recursos seja ao mesmo tempo satisfatória, ou seja, melhore a qualidade de serviço oferecida aos usuários da federação, e justa, ou seja, faça com que provedores consigam retirar da federação em tempos de alta demanda local aproximadamente aquilo que colocam na federação em momentos de baixa demanda local.</p>
-      <p>Sempre que possível, as máquinas virtuais serão criadas em uma nuvem gerenciada pela instituição à qual o usuário pertence, caso contrário (se não existir tal nuvem ou se a cota do usuário na nuvem gerenciada por sua instituição tiver sido excedida), o sistema tentará criar a máquina virtual em uma outra nuvem da federação. Pedidos de usuários locais sempre são priorizados em relação a pedidos de usuários remotos, e os pedidos de dois usuários remotos são priorizados de acordo com as contribuições passadas das suas respectivas nuvens à federação.</p>
-      <p>Dessa forma, a NAF e o <a href="https://compute.rnp.br/">Compute@RNP</a> são serviços complementares. O <a href="https://compute.rnp.br/">Compute@RNP</a> oferece um serviço confiável para instanciação de máquinas virtuais. Através da NAF e usando as mesmas credenciais que permitem acesso ao <a href="https://compute.rnp.br/">Compute@RNP</a>, o usuário pode expandir a sua quota de recursos disponíveis, incluindo recursos confiáveis na nuvem privada de sua instituição (se a mesma possuir uma) e recursos disponíveis em outras nuvens da federação, neste caso obtendo um serviço <i>best effort</i>. Esse tipo de serviço é particularmente útil para execução de aplicações científicas que requerem uma grande quantidade de recursos computacionais que são tipicamente usados por um período de tempo relativamente curto (ex. para executar um conjunto grande de simulações independentes).</i></p>
-      <p>É importante frisar que, na NAF, alguns provedores poderão oferecer recursos sem necessariamente querer receber recursos de volta (por exemplo, esse é o caso da RNP ao incluir na NAF os nuvem privada que dá suporte ao serviço <a href="https://compute.rnp.br/">Compute@RNP</a>), sendo portanto altruístas e possibilitando que uma parcela de usuários que não são provedores de recurso possam, mesmo assim, tirar proveito da federação.</p>
+      <div class="section-container">
+        <h2 class="text-center">Como funciona?</h2>
+        <br>
+        <p>A RNP oferece o serviço <a href="https://compute.rnp.br/">Compute@RNP</a> que permite que usuários do serviço possam criar sob demanda máquinas virtuais para atender suas demandas computacionais. A Nuvem Acadêmica Federada (NAF) é um serviço que expande o serviço <a href="https://compute.rnp.br/">Compute@RNP</a> através da federação de provedores de computação na nuvem que seguem o modelo infraestrutura como serviço (IaaS). A ideia é que os usuários das instituições clientes da RNP possam não só usar o serviço <a href="https://compute.rnp.br/">Compute@RNP</a>, mas também serviços similares oferecidos pelas instituições clientes da RNP.
+        <p>O serviço usa o middleware <a href="http://fogbowcloud.org/">Fogbow</a> para federar as nuvens privadas da RNP e de seus clientes envolvidos na federação. Embora essas nuvens possam usar diferentes middleware para gerência das mesmas (ex. OpenStack, CloudStack, OpenNebula, etc.), o acesso à federação é feito através de uma API comum que segue (e estende) o padrão <a href="http://occi-wg.org/">OCCI</a>, implementada pelo <a href="http://fogbowcloud.org/">Fogbow</a>.</p>
+        <p>De forma similar ao que acontece com o serviço <a href="https://compute.rnp.br/">Compute@RNP</a>, a autenticação dos usuários na NAF é feita usando a Comunidade Acadêmica Federada (<a href="https://portal.rnp.br/web/servicos/cafe">CAFe</a>). O acesso ao serviço pelos usuários é feito através de uma interface gráfica onde o usuário pode se autenticar, e após isso, criar máquinas virtuais nas nuvens da federação.</p>
+        <p>O serviço da NAF é oferecido através de uma espécie de câmara de compensação que coloca à disposição da comunidade, em um determinado instante de tempo, os recursos ociosos das nuvens privadas para que os mesmos sejam usados por usuários de outras nuvens que naquele mesmo momento estão experimentando um excesso de demanda. Um mecanismo de priorização faz com que essa troca de recursos seja ao mesmo tempo satisfatória, ou seja, melhore a qualidade de serviço oferecida aos usuários da federação, e justa, ou seja, faça com que provedores consigam retirar da federação em tempos de alta demanda local aproximadamente aquilo que colocam na federação em momentos de baixa demanda local.</p>
+        <p>Sempre que possível, as máquinas virtuais serão criadas em uma nuvem gerenciada pela instituição à qual o usuário pertence, caso contrário (se não existir tal nuvem ou se a cota do usuário na nuvem gerenciada por sua instituição tiver sido excedida), o sistema tentará criar a máquina virtual em uma outra nuvem da federação. Pedidos de usuários locais sempre são priorizados em relação a pedidos de usuários remotos, e os pedidos de dois usuários remotos são priorizados de acordo com as contribuições passadas das suas respectivas nuvens à federação.</p>
+        <p>Dessa forma, a NAF e o <a href="https://compute.rnp.br/">Compute@RNP</a> são serviços complementares. O <a href="https://compute.rnp.br/">Compute@RNP</a> oferece um serviço confiável para instanciação de máquinas virtuais. Através da NAF e usando as mesmas credenciais que permitem acesso ao <a href="https://compute.rnp.br/">Compute@RNP</a>, o usuário pode expandir a sua quota de recursos disponíveis, incluindo recursos confiáveis na nuvem privada de sua instituição (se a mesma possuir uma) e recursos disponíveis em outras nuvens da federação, neste caso obtendo um serviço <i>best effort</i>. Esse tipo de serviço é particularmente útil para execução de aplicações científicas que requerem uma grande quantidade de recursos computacionais que são tipicamente usados por um período de tempo relativamente curto (ex. para executar um conjunto grande de simulações independentes).</i></p>
+        <p>É importante frisar que, na NAF, alguns provedores poderão oferecer recursos sem necessariamente querer receber recursos de volta (por exemplo, esse é o caso da RNP ao incluir na NAF os nuvem privada que dá suporte ao serviço <a href="https://compute.rnp.br/">Compute@RNP</a>), sendo portanto altruístas e possibilitando que uma parcela de usuários que não são provedores de recurso possam, mesmo assim, tirar proveito da federação.</p>
+      </div>
     </div>
   </div>
 
   <a id="comoaderir" name="comoaderir"></a>
   <div class="container-fluid section section-odd">
     <div class="container">
-      <h2 class="text-center">Como aderir ao serviço?</h2>
-      <br>
-      <p>A adesão ao serviço segue um procedimento simples com os seguintes passos:</p>
-      <ol>
-        <li>Implantação do Fogbow na instituição</li>
-        <li>Assinatura do termo de uso do serviço e envio aos gestores da NAF</li>
-        <li>Cadastro da instância do serviço NAF da instituição na CAFe</li>
-      </ol>
+      <div class="section-container">
+        <h2 class="text-center">Como aderir ao serviço?</h2>
+        <br>
+        <p>A adesão ao serviço segue um procedimento simples com os seguintes passos:</p>
+        <ol>
+          <li>Implantação do Fogbow na instituição</li>
+          <li>Assinatura do termo de uso do serviço e envio aos gestores da NAF</li>
+          <li>Cadastro da instância do serviço NAF da instituição na CAFe</li>
+        </ol>
+      </div>
     </div>
   </div>
 
   <a id="termos" name="termos"></a>
   <div class="container-fluid section section-even">
     <div class="container">
-      <h2 class="text-center">Termos de uso</h2>
-      <br>
-      <h4>1. Introdução</h4>
-      <p>
-        O serviço Nuvem Acadêmica Federada (de agora em diante designado apenas por "serviço") é fornecido pela Universidade Federal de Campina Grande (de agora em diante designada apenas por "UFCG") para a comunidade acadêmica e de pesquisa do Brasil, a fim de promover seus objetivos acadêmicos de ensino e de pesquisa em todo o país. O serviço é uma federação de provedores de computação na nuvem que fornecem seus serviços segundo um modelo de infraestrutura como um serviço (IaaS). O serviço usa o sistema fogbow (<a href="http://fogbowcloud.org/">http://fogbowcloud.org/</a>) para federar nuvens privadas geridas pela RNP e seus clientes. Estas nuvens privadas podem usar sistemas diferentes para a sua gestão interna (por exemplo, OpenStack, CloudStack, OpenNebula etc.). No entanto, o acesso à federação é feito através de uma API comum implementada pelo fogbow, que segue o padrão OCCI (<a href="http://occi-wg.org/about/specification/">http://occi-wg.org/about/specification/</a>).
-        O serviço é uma federação de provedores de computação na nuvem que fornecem seus serviços segundo um modelo de infraestrutura como um serviço (IaaS). O serviço usa o sistema fogbow (http://fogbowcloud.org/) para federar nuvens privadas geridas pela RNP e seus clientes. Estas nuvens privadas podem usar sistemas diferentes para a sua gestão interna (por exemplo, OpenStack, CloudStack, OpenNebula etc.). No entanto, o acesso à federação é feito através de uma API comum implementada pelo fogbow, que segue o padrão OCCI (<a href="http://occi-wg.org/about/specification/">http://occi-wg.org/about/specification/</a>).
-      <p/>
-      <p>
-        O acesso ao serviço pelos usuários é feito através de um portal na Web (<a href="http://naf.fogbowcloud.org/">http://naf.fogbowcloud.org/</a>) onde o usuário pode efetuar o login, e depois disso, criar máquinas virtuais nas nuvens da federação. A autenticação do usuário é feita usando a Comunidade Acadêmica Federada (CAFe) gerida pela RNP (<a href="https://portal.rnp.br/web/servicos/cafe">https://portal.rnp.br/web/servicos/cafe</a>). Sempre que possível, as máquinas virtuais são criadas em uma nuvem gerida pela instituição a que pertence o usuário que fez a solicitação, caso contrário (se não houver tal nuvem ou se a cota do usuário na nuvem gerido por sua instituição tiver sido ultrapassada), o sistema tenta criar a máquina virtual em outra nuvem da federação. Solicitações de usuários locais são sempre priorizadas em detrimento de solicitações de usuários remotos. Solicitações de usuários remotos diferentes são priorizadas de acordo com as contribuições passadas feitas à federação pelas nuvens geridas por suas respectivas instituições.
-      </p>
-      <h4>2. Usuários</h4>
-      <p>
-        O serviço é voltado à comunidade acadêmica brasileira de ensino e pesquisa (estudantes, professores, pesquisadores etc.).
-      </p>
-      <h4>3. Uso não permitido</h4>
-      <p>
-        O serviço está disponível para os beneficiários, a fim de proporcionar o seu uso da forma mais ampla possível em suas atividades de ensino e pesquisa. As contas usadas pelos beneficiários do serviço são pessoais. É proibida a distribuição de contas a terceiros. A utilização direta ou indireta do serviço, a fim de promover qualquer tipo de finalidade comercial é expressamente proibida, assim como qualquer uso que viola de alguma forma as leis e disposições em vigor.
-        É proibido usar o serviço para enviar mensagens e baixar, publicar ou distribuir conteúdo que:
-        Seja impróprio, difamatório, ilegal ou obsceno.
-        Infrinja as patentes, marcas, direitos autorais, segredos comerciais ou outros direitos de propriedade de terceiros.
-        Encaminha esquemas de pirâmide, cartas em cadeia ou mensagens não solicitadas e anúncios de produtos e serviços.
-        Promova e/ou forneça informações educacionais em relação a atividades ilegais e/ou promova a violência natural e/ou danos contra grupos ou pessoas.
-        O uso malicioso do serviço para qualquer tipo de ataques eletrônicos com o objetivo de dificultar o uso do próprio serviço ou a utilização de serviços de terceiros, para tirar proveito de vulnerabilidades, para ter acesso ilegal aos sistemas de terceiros e para comprometer dados pessoais é proibida. Mais especificamente, mas não exclusivamente:
-        É proibido agir com o objetivo de inibir e/ou interromper o funcionamento do serviço e/ou servidores e/ou as redes conectados ao serviço, bem como ignorar as solicitações e procedimentos de manutenção e configuração, bem como as políticas e a regulação das redes conectadas ao serviço.
-        É proibido obstruir e/ou inibir qualquer outro usuário de uma utilização adequada do serviço.
-        É proibido compartilhar software que contenha vírus, cavalos de Tróia ou software corrompido, que visa tirar partido de vulnerabilidades com o objectivo de atacar eletronicamente e ter acesso ilegal aos sistemas de terceiros.
-        É proibido usar aplicações como robôs ou aplicações para a pesquisa/recuperação de um site ou de outras máquinas para a recuperação ou a criação de um índice/diretório de uma parte do serviço ou para a recolha de informações sobre os usuários para qualquer tipo de propósito não permitido.
-        São proibidos ataques dos tipos Port Scanning, Network Scanning, negação de serviço, e negação de serviço distribuída.
-        É proibido usar o serviço para a criação de páginas na Web a fim de comprometer dados pessoais ou senhas de usuários do serviço e/ou terceiros.
-        É proibido manter uma servidor de retransmissão (relay) aberto (correio eletrônico ou proxy).
-        É proibido manter um nó TOR EXIT.
-        É proibida a Operação/Manutenção de qualquer servidor de jogo, a menos que seu uso seja claramente identificada para fins educacionais/pesquisa.
-        É proibido usar, promover, apoiar ou informar terceiros no que se refere à utilização do serviço de qualquer maneira ilegal ou de uma forma que viola esses termos de uso.
-        É proibido difamar, insultar, assediar, perseguir, ameaçar ou de qualquer outra forma violar os direitos legais (tais como o direito à privacidade e o direito de publicidade) de terceiros.
-        É proibido excluir qualquer tipo de indicações de direitos autorais, marcas ou outros direitos de propriedade intelectual que são incluídos no serviço.
-      </p>
-      <h4>4. Direitos de autoria (Copyright)</h4>
-      <p>
-        Todos os itens acima são aplicados e em vigor apenas para o conteúdo legal e só na condição de que o uso e a publicação do conteúdo não viola a lei. A utilização e distribuição do conteúdo que viole os direitos autorais de terceiros viola também os presentes termos de uso do serviço.
-        A UFCG não é de forma alguma responsável nem pode controlar a existência de tais direitos. Consequentemente, a UFCG considera que cada usuário é um titular/proprietário dos referidos direitos e garantias - por aceitar os presentes termos - que ele/ela tem os direitos necessários para que o uso e a publicação do conteúdo não viola a lei e as disposições relevantes.
-      </p>
-      <h4>5. Interrupção ou cancelamento</h4>
-      <p>
-        Em caso de violação dos termos de uso do serviço, a UFCG pode rever, reexaminar e/ou deixar de fornecer o serviço para o usuário infrator e/ou retirar o conteúdo que foi salvo por ele/ela sem qualquer aviso prévio.
-      </p>
-      <h4>6. Privacidade</h4>
-      <p>
-        Para que a UFCG possa fornecer o seu serviço, sem quaisquer impedimentos, a UFCG pode coletar dados estatísticos gerais sobre o fluxo e otimização/desenvolvimento da rede e dos recursos computacionais da infraestrutura que executa o sistema fogbow. A UFCG não têm acesso direto, não tem interesse em tê-lo e não irá coletar quaisquer dados específicos no que diz respeito a serviços específicos que estão hospedados em máquinas virtuais ou pelos usuários finais dos serviços hospedados. As informações que venham a ser recolhidas através do serviço pela UFCG será utilizada de acordo com a legislação em vigor no Brasil.
-        Estes dados podem ser usados ​​a fim de controlar o funcionamento do serviço, para melhorar a qualidade do serviço, ou para fins de pesquisa, e podem ser divulgados a terceiros, desde que sejam apropriadamente manipulados a fim de que os dados pessoais dos gestores e/ou dos usuários finais não sejam divulgados. A UFCG pode divulgar informações sobre o uso de máquinas virtuais quando a lei e os serviços competentes assim exigirem.
-      </p>
-      <h4>7. Software</h4>
-      <p>
-        Se a UFCG fornece determinado software para o usuário, a fim de utilizar o serviço, o serviço será utilizado de acordo com a licença e os termos de uso que o usuário será solicitado a aceitar a fim de utilizar o software. Se ele/ela não é solicitado a aceitar alguma licença de utilização ou termos de uso, a UFCG fornece a licença para usar o software específico somente para o uso aprovado do serviço. A UFCG pode monitorar automaticamente a versão do software que será oferecido. Este software pode ser atualizado, melhorado, e desenvolvido. Em caso de versões atualizadas o usuário será solicitado a aceitar a licença e termos de uso da versão atualizada.
-      </p>
-      <p>
-        O usuário (proprietário de uma ou mais máquinas virtuais) e só ele/ela tem a responsabilidade de guardar a licença de uso e de cumprir com os termos da licença de uso do software que ele/ela instala e executa nas máquinas virtuais.
-      </p>
-      <h4>8. Responsabilidade da UFCG</h4>
-      <p>
-        A UFCG não assume qualquer responsabilidade pelo conteúdo e os dados distribuídos através do serviço. A decisão sobre a legalidade do conteúdo - dados e/ou a decisão para o lançamento e distribuição de conteúdos e dados específicos pertence exclusivamente ao usuário.
-        A UFCG toma todas as medidas necessárias a fim de evitar qualquer abuso, arbitrariedade, dano e perda de dados e conteúdo; no entanto, a UFCG não garante que tal possibilidade não existe em qualquer caso e não tem qualquer responsabilidade se um evento como esse ocorrer. Os usuários do serviço devem guardar os seus próprios backups para lidar com tais incidentes.
-        A UFCG toma todas as medidas necessárias a fim de alcançar a maior disponibilidade do serviço; no entanto, a UFCG não oferece qualquer garantia em relação à disponibilidade do serviço que a faça ser responsabilizada e/ou responsável ​​por danos diretos ou indiretos devidos à indisponibilidade do serviço por qualquer período de tempo.
-        A UFCG não pode ser responsabilizada e/ou responsável ​​pela perda de dados e conteúdos distribuídos através do serviço, bem como por quaisquer danos relevantes. Além disso, a UFCG não garante nem tem qualquer responsabilidade pela exatidão dos dados e do conteúdo disponível através do seu serviço.
-        Opiniões ou textos publicados por meio do serviço não representam, em caso algum opiniões oficiais da UFCG, que não pode ser responsabilizada pelo seu conteúdo.
-        De acordo com a lei relativa à proteção de dados pessoais, a UFCG não controla ou monitora de forma alguma o conteúdo da informação distribuída e dos dados distribuídos, de forma que a UFCG se isenta de qualquer tipo de responsabilidade por eventual distribuição em sua rede de produtos ou serviços através dos quais a posse ou a distribuição do conteúdo constitui violação de direitos autorais ou outro delito.
-        A UFCG vai desprender todos os esforços possíveis para o funcionamento ininterrupto e confiável do serviço. Não obstante, a UFCG pode deixar de fornecer o serviço e/ou modificar determinadas configurações do serviço a qualquer momento sem notificação prévia. A interrupção da prestação do serviço significa automaticamente a interrupção de seu uso por seus usuários, sem qualquer direito de indenização.
-      </p>
-      <h4>9. Aplicação dos termos</h4>
-      <p>
-        Os presentes termos de uso substituem qualquer acordo verbal ou escrito prévio ou outro contrato, convenção, relacionadas ao serviço. Cada usuário tem o direito de retirar a sua/seu consentimento relativos aos termos de uso, mas se ele/ela faz isso, então a UFCG deixará de fornecer o serviço para esse usuário.
-        A legislação brasileira rege os termos de uso descritos acima. Qualquer litígio em relação a estes termos de uso serão resolvidos pelos tribunais de justiça em Campina Grande, Paraíba, Brasil.
-      </p>
+      <div class="section-container">
+        <h2 class="text-center">Termos de uso</h2>
+        <br>
+        <h4>1. Introdução</h4>
+        <p>
+          O serviço Nuvem Acadêmica Federada (de agora em diante designado apenas por "serviço") é fornecido pela Universidade Federal de Campina Grande (de agora em diante designada apenas por "UFCG") para a comunidade acadêmica e de pesquisa do Brasil, a fim de promover seus objetivos acadêmicos de ensino e de pesquisa em todo o país. O serviço é uma federação de provedores de computação na nuvem que fornecem seus serviços segundo um modelo de infraestrutura como um serviço (IaaS). O serviço usa o sistema fogbow (<a href="http://fogbowcloud.org/">http://fogbowcloud.org/</a>) para federar nuvens privadas geridas pela RNP e seus clientes. Estas nuvens privadas podem usar sistemas diferentes para a sua gestão interna (por exemplo, OpenStack, CloudStack, OpenNebula etc.). No entanto, o acesso à federação é feito através de uma API comum implementada pelo fogbow, que segue o padrão OCCI (<a href="http://occi-wg.org/about/specification/">http://occi-wg.org/about/specification/</a>).
+          O serviço é uma federação de provedores de computação na nuvem que fornecem seus serviços segundo um modelo de infraestrutura como um serviço (IaaS). O serviço usa o sistema fogbow (http://fogbowcloud.org/) para federar nuvens privadas geridas pela RNP e seus clientes. Estas nuvens privadas podem usar sistemas diferentes para a sua gestão interna (por exemplo, OpenStack, CloudStack, OpenNebula etc.). No entanto, o acesso à federação é feito através de uma API comum implementada pelo fogbow, que segue o padrão OCCI (<a href="http://occi-wg.org/about/specification/">http://occi-wg.org/about/specification/</a>).
+        <p/>
+        <p>
+          O acesso ao serviço pelos usuários é feito através de um portal na Web (<a href="http://naf.fogbowcloud.org/">http://naf.fogbowcloud.org/</a>) onde o usuário pode efetuar o login, e depois disso, criar máquinas virtuais nas nuvens da federação. A autenticação do usuário é feita usando a Comunidade Acadêmica Federada (CAFe) gerida pela RNP (<a href="https://portal.rnp.br/web/servicos/cafe">https://portal.rnp.br/web/servicos/cafe</a>). Sempre que possível, as máquinas virtuais são criadas em uma nuvem gerida pela instituição a que pertence o usuário que fez a solicitação, caso contrário (se não houver tal nuvem ou se a cota do usuário na nuvem gerido por sua instituição tiver sido ultrapassada), o sistema tenta criar a máquina virtual em outra nuvem da federação. Solicitações de usuários locais são sempre priorizadas em detrimento de solicitações de usuários remotos. Solicitações de usuários remotos diferentes são priorizadas de acordo com as contribuições passadas feitas à federação pelas nuvens geridas por suas respectivas instituições.
+        </p>
+        <h4>2. Usuários</h4>
+        <p>
+          O serviço é voltado à comunidade acadêmica brasileira de ensino e pesquisa (estudantes, professores, pesquisadores etc.).
+        </p>
+        <h4>3. Uso não permitido</h4>
+        <p>
+          O serviço está disponível para os beneficiários, a fim de proporcionar o seu uso da forma mais ampla possível em suas atividades de ensino e pesquisa. As contas usadas pelos beneficiários do serviço são pessoais. É proibida a distribuição de contas a terceiros. A utilização direta ou indireta do serviço, a fim de promover qualquer tipo de finalidade comercial é expressamente proibida, assim como qualquer uso que viola de alguma forma as leis e disposições em vigor.
+          É proibido usar o serviço para enviar mensagens e baixar, publicar ou distribuir conteúdo que:
+          Seja impróprio, difamatório, ilegal ou obsceno.
+          Infrinja as patentes, marcas, direitos autorais, segredos comerciais ou outros direitos de propriedade de terceiros.
+          Encaminha esquemas de pirâmide, cartas em cadeia ou mensagens não solicitadas e anúncios de produtos e serviços.
+          Promova e/ou forneça informações educacionais em relação a atividades ilegais e/ou promova a violência natural e/ou danos contra grupos ou pessoas.
+          O uso malicioso do serviço para qualquer tipo de ataques eletrônicos com o objetivo de dificultar o uso do próprio serviço ou a utilização de serviços de terceiros, para tirar proveito de vulnerabilidades, para ter acesso ilegal aos sistemas de terceiros e para comprometer dados pessoais é proibida. Mais especificamente, mas não exclusivamente:
+          É proibido agir com o objetivo de inibir e/ou interromper o funcionamento do serviço e/ou servidores e/ou as redes conectados ao serviço, bem como ignorar as solicitações e procedimentos de manutenção e configuração, bem como as políticas e a regulação das redes conectadas ao serviço.
+          É proibido obstruir e/ou inibir qualquer outro usuário de uma utilização adequada do serviço.
+          É proibido compartilhar software que contenha vírus, cavalos de Tróia ou software corrompido, que visa tirar partido de vulnerabilidades com o objectivo de atacar eletronicamente e ter acesso ilegal aos sistemas de terceiros.
+          É proibido usar aplicações como robôs ou aplicações para a pesquisa/recuperação de um site ou de outras máquinas para a recuperação ou a criação de um índice/diretório de uma parte do serviço ou para a recolha de informações sobre os usuários para qualquer tipo de propósito não permitido.
+          São proibidos ataques dos tipos Port Scanning, Network Scanning, negação de serviço, e negação de serviço distribuída.
+          É proibido usar o serviço para a criação de páginas na Web a fim de comprometer dados pessoais ou senhas de usuários do serviço e/ou terceiros.
+          É proibido manter uma servidor de retransmissão (relay) aberto (correio eletrônico ou proxy).
+          É proibido manter um nó TOR EXIT.
+          É proibida a Operação/Manutenção de qualquer servidor de jogo, a menos que seu uso seja claramente identificada para fins educacionais/pesquisa.
+          É proibido usar, promover, apoiar ou informar terceiros no que se refere à utilização do serviço de qualquer maneira ilegal ou de uma forma que viola esses termos de uso.
+          É proibido difamar, insultar, assediar, perseguir, ameaçar ou de qualquer outra forma violar os direitos legais (tais como o direito à privacidade e o direito de publicidade) de terceiros.
+          É proibido excluir qualquer tipo de indicações de direitos autorais, marcas ou outros direitos de propriedade intelectual que são incluídos no serviço.
+        </p>
+        <h4>4. Direitos de autoria (Copyright)</h4>
+        <p>
+          Todos os itens acima são aplicados e em vigor apenas para o conteúdo legal e só na condição de que o uso e a publicação do conteúdo não viola a lei. A utilização e distribuição do conteúdo que viole os direitos autorais de terceiros viola também os presentes termos de uso do serviço.
+          A UFCG não é de forma alguma responsável nem pode controlar a existência de tais direitos. Consequentemente, a UFCG considera que cada usuário é um titular/proprietário dos referidos direitos e garantias - por aceitar os presentes termos - que ele/ela tem os direitos necessários para que o uso e a publicação do conteúdo não viola a lei e as disposições relevantes.
+        </p>
+        <h4>5. Interrupção ou cancelamento</h4>
+        <p>
+          Em caso de violação dos termos de uso do serviço, a UFCG pode rever, reexaminar e/ou deixar de fornecer o serviço para o usuário infrator e/ou retirar o conteúdo que foi salvo por ele/ela sem qualquer aviso prévio.
+        </p>
+        <h4>6. Privacidade</h4>
+        <p>
+          Para que a UFCG possa fornecer o seu serviço, sem quaisquer impedimentos, a UFCG pode coletar dados estatísticos gerais sobre o fluxo e otimização/desenvolvimento da rede e dos recursos computacionais da infraestrutura que executa o sistema fogbow. A UFCG não têm acesso direto, não tem interesse em tê-lo e não irá coletar quaisquer dados específicos no que diz respeito a serviços específicos que estão hospedados em máquinas virtuais ou pelos usuários finais dos serviços hospedados. As informações que venham a ser recolhidas através do serviço pela UFCG será utilizada de acordo com a legislação em vigor no Brasil.
+          Estes dados podem ser usados ​​a fim de controlar o funcionamento do serviço, para melhorar a qualidade do serviço, ou para fins de pesquisa, e podem ser divulgados a terceiros, desde que sejam apropriadamente manipulados a fim de que os dados pessoais dos gestores e/ou dos usuários finais não sejam divulgados. A UFCG pode divulgar informações sobre o uso de máquinas virtuais quando a lei e os serviços competentes assim exigirem.
+        </p>
+        <h4>7. Software</h4>
+        <p>
+          Se a UFCG fornece determinado software para o usuário, a fim de utilizar o serviço, o serviço será utilizado de acordo com a licença e os termos de uso que o usuário será solicitado a aceitar a fim de utilizar o software. Se ele/ela não é solicitado a aceitar alguma licença de utilização ou termos de uso, a UFCG fornece a licença para usar o software específico somente para o uso aprovado do serviço. A UFCG pode monitorar automaticamente a versão do software que será oferecido. Este software pode ser atualizado, melhorado, e desenvolvido. Em caso de versões atualizadas o usuário será solicitado a aceitar a licença e termos de uso da versão atualizada.
+        </p>
+        <p>
+          O usuário (proprietário de uma ou mais máquinas virtuais) e só ele/ela tem a responsabilidade de guardar a licença de uso e de cumprir com os termos da licença de uso do software que ele/ela instala e executa nas máquinas virtuais.
+        </p>
+        <h4>8. Responsabilidade da UFCG</h4>
+        <p>
+          A UFCG não assume qualquer responsabilidade pelo conteúdo e os dados distribuídos através do serviço. A decisão sobre a legalidade do conteúdo - dados e/ou a decisão para o lançamento e distribuição de conteúdos e dados específicos pertence exclusivamente ao usuário.
+          A UFCG toma todas as medidas necessárias a fim de evitar qualquer abuso, arbitrariedade, dano e perda de dados e conteúdo; no entanto, a UFCG não garante que tal possibilidade não existe em qualquer caso e não tem qualquer responsabilidade se um evento como esse ocorrer. Os usuários do serviço devem guardar os seus próprios backups para lidar com tais incidentes.
+          A UFCG toma todas as medidas necessárias a fim de alcançar a maior disponibilidade do serviço; no entanto, a UFCG não oferece qualquer garantia em relação à disponibilidade do serviço que a faça ser responsabilizada e/ou responsável ​​por danos diretos ou indiretos devidos à indisponibilidade do serviço por qualquer período de tempo.
+          A UFCG não pode ser responsabilizada e/ou responsável ​​pela perda de dados e conteúdos distribuídos através do serviço, bem como por quaisquer danos relevantes. Além disso, a UFCG não garante nem tem qualquer responsabilidade pela exatidão dos dados e do conteúdo disponível através do seu serviço.
+          Opiniões ou textos publicados por meio do serviço não representam, em caso algum opiniões oficiais da UFCG, que não pode ser responsabilizada pelo seu conteúdo.
+          De acordo com a lei relativa à proteção de dados pessoais, a UFCG não controla ou monitora de forma alguma o conteúdo da informação distribuída e dos dados distribuídos, de forma que a UFCG se isenta de qualquer tipo de responsabilidade por eventual distribuição em sua rede de produtos ou serviços através dos quais a posse ou a distribuição do conteúdo constitui violação de direitos autorais ou outro delito.
+          A UFCG vai desprender todos os esforços possíveis para o funcionamento ininterrupto e confiável do serviço. Não obstante, a UFCG pode deixar de fornecer o serviço e/ou modificar determinadas configurações do serviço a qualquer momento sem notificação prévia. A interrupção da prestação do serviço significa automaticamente a interrupção de seu uso por seus usuários, sem qualquer direito de indenização.
+        </p>
+        <h4>9. Aplicação dos termos</h4>
+        <p>
+          Os presentes termos de uso substituem qualquer acordo verbal ou escrito prévio ou outro contrato, convenção, relacionadas ao serviço. Cada usuário tem o direito de retirar a sua/seu consentimento relativos aos termos de uso, mas se ele/ela faz isso, então a UFCG deixará de fornecer o serviço para esse usuário.
+          A legislação brasileira rege os termos de uso descritos acima. Qualquer litígio em relação a estes termos de uso serão resolvidos pelos tribunais de justiça em Campina Grande, Paraíba, Brasil.
+        </p>
+      </div>
     </div>
   </div>
 
