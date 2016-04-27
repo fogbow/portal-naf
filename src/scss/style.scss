@@ -18,10 +18,9 @@ h2 {
   }
 }
 .logo-sm {
-  width: 90px;
-  height: 90px;
+  width: 32px;
+  height: 45px;
   margin: auto;
-  padding-top: 10px;
 }
 svg {
   .cls-1{fill:#fff;}
@@ -90,5 +89,14 @@ svg {
   padding: 15px 40px;
   @media screen and (min-width: $screen-xs-min) {
     margin-top: 24px;
+  }
+}
+
+.navbar-nav {
+
+  > li > a {
+    padding-top:    27px;
+    padding-bottom: 27px;
+    background-color: $gray-darker;
   }
 }
