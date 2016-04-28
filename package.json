@@ -21,10 +21,12 @@
   },
   "homepage": "https://github.com/fogbow/portal-naf#readme",
   "devDependencies": {
+    "browser-sync": "^2.12.5",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-bower": "0.0.13",
     "gulp-concat": "^2.6.0",
+    "gulp-inject": "^3.0.0",
     "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.2.0",
