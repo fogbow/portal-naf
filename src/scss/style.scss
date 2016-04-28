@@ -4,6 +4,7 @@
 $padding-base-vertical: 30px;
 
 body {
+  margin-top: 70px;
 }
 
 h2 {
@@ -78,25 +79,49 @@ svg {
 }
 .nav>li>a.main-menu-item {
   text-transform: uppercase;
-  @media screen and (min-width: $screen-xs-min) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
 }
-.main-menu-item-featured {
-  text-transform: uppercase;
+.main-menu-featured {
+  padding: 0 40px;
+}
+
+.nav>li>a.main-menu-item-featured {
+  background-color: $brand-primary;
+  color: #FFF;
   border-radius: 75px;
-  padding: 15px 40px;
-  @media screen and (min-width: $screen-xs-min) {
-    margin-top: 24px;
+  padding: 15px 0;
+
+  &:hover {
+    background-color: $brand-primary;
   }
 }
 
 .navbar-nav {
+  width: 95%;
 
   > li > a {
     padding-top:    27px;
     padding-bottom: 27px;
-    background-color: $gray-darker;
+  }
+
+  > li {
+    float: none;
+    > a {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
+
+  @media (max-width: $screen-md-max) {
+    width: 90%;
+  }
+  @media (min-width: $screen-sm-min) {
+
+    > li {
+      display: table-cell;
+      width: 1%;
+      > a {
+        margin-bottom: 0;
+      }
+    }
   }
 }
