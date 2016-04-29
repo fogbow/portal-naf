@@ -73,6 +73,12 @@ svg {
     }
   }
 }
+.section-even {
+  a:link,
+  a:visited {
+    color: $brand-primary;
+  }
+}
 .section-odd {
   background-color: $brand-primary;
   color: $gray-darker;

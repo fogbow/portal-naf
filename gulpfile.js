@@ -46,10 +46,14 @@ gulp.task('serve', ['sass'], function() {
         }
     });
     gulp.watch(paths.sass+'/*.scss', ['sass']);
-    gulp.watch(paths.src+"/*.html").on('change', browserSync.reload);
+    gulp.watch([paths.src+"/*.html", paths.src+'css/*.css']).on('change', browserSync.reload);
 });
 
 gulp.task('build', function() {
+  var vendor = gulp.src([
+        paths.bower+'/jquery/dist/jquery.min.js',
+        paths.bower+'/bootstrap-sass/assets/javascripts/bootstrap.min.js'])
+    .pipe(gulp.dest(paths.src+'/js'));
   var target = gulp.src(paths.src+'/index.html');
   var sources = gulp.src([
     paths.bower+'/jquery/dist/jquery.min.js',
@@ -58,15 +62,6 @@ gulp.task('build', function() {
     paths.src+'/css/*.css'], {read: false, relative: false});
   return target.pipe(inject(sources))
     .pipe(gulp.dest(paths.src));
-});
-
-gulp.task('dist-scripts', function() {
-  return gulp.src(paths.src+'/js/*.js')
-    .pipe(sourcemaps.init())
-    .pipe(uglify())
-    .pipe(concat('bundle.min.js'))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(paths.dist+'/assets/js'));
 });
 
 gulp.task('dist-scripts', function() {
