@@ -1,0 +1,24 @@
+{
+  "name": "portal-naf",
+  "description": "",
+  "main": "index.html",
+  "authors": [],
+  "license": "",
+  "keywords": [
+    "naf",
+    "fogbow"
+  ],
+  "homepage": "https://github.com/fogbow/portal-naf",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.6"
+  }
+}

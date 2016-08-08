@@ -1,0 +1,133 @@
+/* Main SASS file */
+@import 'variables';
+
+$padding-base-vertical: 30px;
+
+body {
+  margin-top: 70px;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.logo {
+  width: 70%;
+  @media screen and (max-width: $screen-xs-max) {
+    width: 40%;
+    margin: auto;
+  }
+}
+.logo-sm {
+  width: 32px;
+  height: 45px;
+  margin: auto;
+}
+svg {
+  .cls-1{fill:#fff;}
+  .cls-2 {fill: $brand-primary;}
+}
+.nav-main {
+  // @media screen and (min-width: $screen-md-min) { padding-top: $padding-large-vertical*2; }
+  .nav>li>a {
+    padding: 40px 15px;
+  }
+}
+.landing-wrapper {
+  height: 100vh;
+}
+.intro {
+  padding-top: $padding-large-vertical*16;
+  padding-bottom: $padding-large-vertical*5;
+  @media screen and (max-width: $screen-xs-max) {
+    padding-top: $padding-large-vertical*2;
+    padding-bottom: $padding-large-vertical*2;
+  }
+  @media screen and (max-width: $screen-sm-max) {
+    padding-top: $padding-large-vertical*3;
+    padding-bottom: $padding-large-vertical*3;
+  }
+}
+
+.call-to-action {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.5);
+
+  a:link {
+    border-radius: 75px;
+    font-size: 1.5em;
+    padding: 15px 40px;
+  }
+}
+.section {
+  padding-top: $padding-large-vertical*6;
+  padding-bottom: $padding-large-vertical*6;
+
+  font-size: $font-size-large;
+  .section-container {
+    @media screen and (min-width: $screen-xs-min) {
+      margin: 24px 100px;
+    }
+  }
+}
+.section-even {
+  a:link,
+  a:visited {
+    color: $brand-primary;
+  }
+}
+.section-odd {
+  background-color: $brand-primary;
+  color: $gray-darker;
+}
+.nav>li>a.main-menu-item {
+  text-transform: uppercase;
+}
+.main-menu-featured {
+  padding: 0 40px;
+}
+
+.nav>li>a.main-menu-item-featured {
+  background-color: $brand-primary;
+  color: #FFF;
+  border-radius: 75px;
+  padding: 15px 0;
+
+  &:hover {
+    background-color: $brand-primary;
+  }
+}
+
+.navbar-nav {
+  width: 95%;
+
+  > li > a {
+    padding-top:    27px;
+    padding-bottom: 27px;
+  }
+
+  > li {
+    float: none;
+    > a {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
+
+  @media (max-width: $screen-md-max) {
+    width: 90%;
+  }
+  @media (min-width: $screen-sm-min) {
+
+    > li {
+      display: table-cell;
+      width: 1%;
+      > a {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
