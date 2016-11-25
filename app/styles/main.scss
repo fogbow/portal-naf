@@ -1,7 +1,9 @@
-/* Main SASS file */
-@import 'variables';
-
-$padding-base-vertical: 30px;
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import "customVariables";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
 
 body {
   margin-top: 70px;
