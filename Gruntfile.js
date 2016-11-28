@@ -16,7 +16,8 @@ module.exports = function (grunt) {
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
-    cdnify: 'grunt-google-cdn'
+    cdnify: 'grunt-google-cdn',
+    deploy: 'grunt-ssh-deploy'
   });
 
   // Configurable paths for the application
@@ -27,6 +28,38 @@ module.exports = function (grunt) {
 
   // Define the configuration for all the tasks
   grunt.initConfig({
+
+    // Load credentials
+    secret: grunt.file.readJSON('secret.json'),
+
+    // Setup environments
+    environments: {
+      options: {
+        local_path: 'dist',
+        current_symlink: ''
+      },
+      dev: {
+        options: {
+            host: '<%= secret.dev.host %>',
+            username: '<%= secret.dev.username %>',
+            password: '<%= secret.dev.password %>',
+            port: '<%= secret.dev.port %>',
+            deploy_path: '<%= secret.dev.deploy_path %>',
+            debug: true,
+            releases_to_keep: '3'
+        }
+      },
+      prod: {
+        options: {
+            host: '<%= secret.prod.host %>',
+            username: '<%= secret.prod.username %>',
+            password: '<%= secret.prod.password %>',
+            port: '<%= secret.prod.port %>',
+            deploy_path: '<%= secret.prod.deploy_path %>',
+            releases_to_keep: '5'
+        }
+      }
+    },
 
     // Project settings
     yeoman: appConfig,
